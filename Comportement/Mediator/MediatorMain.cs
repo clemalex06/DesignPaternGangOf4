@@ -10,9 +10,9 @@ namespace Mediator
      * que ces éléments se connaissent mutuellement
      * 
      */
-    public class Utilisateur
+    public static class MediatorMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var formulaire = new Formulaire();
             formulaire.ajouteControle(new ZoneSaisie("Nom"));

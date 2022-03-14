@@ -9,9 +9,9 @@ namespace State
      * interne
      * 
      */
-    public class Utilisateur
+    public static class StateMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var commande = new Commande();
             commande.ajouteProduit(new Produit("Vehicule 1"));

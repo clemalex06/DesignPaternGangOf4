@@ -10,7 +10,7 @@ namespace ChainOfResponsability
      *  successeurs jusqu'à ce que l'un d'entre eux y réponde
      * 
      */
-    public static class ChainOfResponsability
+    public static class ChainOfResponsabilityMain
     {
         public static void Main()
         {

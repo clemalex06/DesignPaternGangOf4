@@ -97,10 +97,96 @@ namespace Main
                             1,
                            new DesignPattern
                            {
-                               Name = "ChainOfResponsability",
-                               Action = ChainOfResponsability.ChainOfResponsability.Main,
+                               Name = "Chain Of Responsability",
+                               Action = ChainOfResponsability.ChainOfResponsabilityMain.Main,
                            }
-                        }
+                        },
+                        {
+                            2,
+                           new DesignPattern
+                           {
+                               Name = "Command",
+                               Action = Command.CommandMain.Main,
+                           }
+                        },
+                        {
+                            3,
+                           new DesignPattern
+                           {
+                               Name = "Interpreter",
+                               Action = Interpreter.InterpreterMain.Main,
+                           }
+                        },
+                        {
+                            4,
+                           new DesignPattern
+                           {
+                               Name = "Iterator",
+                               Action = Iterator.IteratorMain.Main,
+                           }
+                        },
+                        {
+                            5,
+                           new DesignPattern
+                           {
+                               Name = "Mediator",
+                               Action = Mediator.MediatorMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            6,
+                           new DesignPattern
+                           {
+                               Name = "Memento",
+                               Action = Memento.MementoMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            7,
+                           new DesignPattern
+                           {
+                               Name = "Observer",
+                               Action = Observer.ObserverMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            8,
+                           new DesignPattern
+                           {
+                               Name = "State",
+                               Action = State.StateMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            9,
+                           new DesignPattern
+                           {
+                               Name = "Strategy",
+                               Action = Strategy.StrategyMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            10,
+                           new DesignPattern
+                           {
+                               Name = "TemplateMethod",
+                               Action = TemplateMethod.TemplateMethodMain.Main,
+                           }
+                        },
+                        //,
+                        {
+                            11,
+                           new DesignPattern
+                           {
+                               Name = "Visitor",
+                               Action = Visitor.VisitorMain.Main,
+                           }
+                        },
                     },
                 }
             },
