@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Main
 {
@@ -16,7 +17,7 @@ namespace Main
 
                 if (!int.TryParse(userChoice, out var options) || !DesignPatternType.ContainsKey(options))
                 {
-                    Console.WriteLine("Please choose a valid Option !!!");
+                    Console.WriteLine(chooseValidOption);
                 }
                 else
                 {
@@ -29,6 +30,23 @@ namespace Main
                     {
                         var designPatternType = DesignPatternType[options];
                         Console.WriteLine($" You choose the following design Pattern Type => {designPatternType.Name}");
+                        if (designPatternType.DesignPatterns.Any())
+                        {
+                            DisplayDesignPattern(designPatternType);
+
+                            userChoice = Console.ReadLine();
+                            Console.Clear();
+                            if (!int.TryParse(userChoice, out options) || !designPatternType.DesignPatterns.ContainsKey(options))
+                            {
+                                Console.WriteLine(chooseValidOption);
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Launch Run of the following design pattern : {designPatternType.DesignPatterns[options].Name}");
+                                Console.WriteLine();
+                                designPatternType.DesignPatterns[options].Action();
+                            }
+                        }
                     }
                 }
 
@@ -47,7 +65,17 @@ namespace Main
             }
         }
 
+        private static void DisplayDesignPattern(DesignPatternType designPatternType)
+        {
+            Console.WriteLine("Please choose a design pattern to Run : ");
+            foreach (var item in designPatternType.DesignPatterns)
+            {
+                Console.WriteLine($"{item.Key} => {item.Value.Name}");
+            }
+        }
+
         private static bool ContinueRunning = true;
+        private static readonly string chooseValidOption = "Please choose a valid Option !!!";
         private static readonly Dictionary<int, DesignPatternType> DesignPatternType = new Dictionary<int, DesignPatternType>
         {
             {
@@ -63,7 +91,17 @@ namespace Main
                 new DesignPatternType
                 {
                     Name = "Comportement",
-                    DesignPatterns = new Dictionary<int, DesignPattern>(),
+                    DesignPatterns = new Dictionary<int, DesignPattern>
+                    {
+                        {
+                            1,
+                           new DesignPattern
+                           {
+                               Name = "ChainOfResponsability",
+                               Action = ChainOfResponsability.ChainOfResponsability.Main,
+                           }
+                        }
+                    },
                 }
             },
             {
