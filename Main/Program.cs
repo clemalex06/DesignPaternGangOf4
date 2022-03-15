@@ -75,7 +75,9 @@ namespace Main
         }
 
         private static bool ContinueRunning = true;
+
         private static readonly string chooseValidOption = "Please choose a valid Option !!!";
+
         private static readonly Dictionary<int, DesignPatternType> DesignPatternType = new Dictionary<int, DesignPatternType>
         {
             {
@@ -240,7 +242,33 @@ namespace Main
                 new DesignPatternType
                 {
                     Name = "Others",
-                    DesignPatterns = new Dictionary<int, DesignPattern>(),
+                    DesignPatterns = new Dictionary<int, DesignPattern>
+                    {
+                        {
+                            1,
+                           new DesignPattern
+                           {
+                               Name = "Multicast",
+                               Action = Multicast.MulticastMain.Main,
+                           }
+                        },
+                        {
+                            2,
+                           new DesignPattern
+                           {
+                               Name = "PluggableFactory",
+                               Action = PluggableFactory.PluggableFactoryMain.Main,
+                           }
+                        },
+                        {
+                            3,
+                           new DesignPattern
+                           {
+                               Name = "ReflectiveVisitor",
+                               Action = ReflectiveVisitor.ReflectiveVisitorMain.Main,
+                           }
+                        },
+                    },
                 }
             },
             {
