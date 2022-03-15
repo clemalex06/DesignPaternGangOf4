@@ -133,7 +133,6 @@ namespace Main
                                Action = Mediator.MediatorMain.Main,
                            }
                         },
-                        //,
                         {
                             6,
                            new DesignPattern
@@ -142,7 +141,6 @@ namespace Main
                                Action = Memento.MementoMain.Main,
                            }
                         },
-                        //,
                         {
                             7,
                            new DesignPattern
@@ -151,7 +149,6 @@ namespace Main
                                Action = Observer.ObserverMain.Main,
                            }
                         },
-                        //,
                         {
                             8,
                            new DesignPattern
@@ -169,7 +166,6 @@ namespace Main
                                Action = Strategy.StrategyMain.Main,
                            }
                         },
-                        //,
                         {
                             10,
                            new DesignPattern
@@ -178,7 +174,6 @@ namespace Main
                                Action = TemplateMethod.TemplateMethodMain.Main,
                            }
                         },
-                        //,
                         {
                             11,
                            new DesignPattern
@@ -195,7 +190,49 @@ namespace Main
                 new DesignPatternType
                 {
                     Name = "Construction",
-                    DesignPatterns = new Dictionary<int, DesignPattern>(),
+                    DesignPatterns = new Dictionary<int, DesignPattern>
+                    {
+                        {
+                            1,
+                           new DesignPattern
+                           {
+                               Name = "Abstract Factory",
+                               Action = AbstractFactory.AbstractFactoryMain.Main,
+                           }
+                        },
+                        {
+                            2,
+                           new DesignPattern
+                           {
+                               Name = "Builder",
+                               Action = Builder.BuilderMain.Main,
+                           }
+                        },
+                        {
+                            3,
+                           new DesignPattern
+                           {
+                               Name = "FactoryMethod",
+                               Action = FactoryMethod.FactoryMethodMain.Main,
+                           }
+                        },
+                        {
+                            4,
+                           new DesignPattern
+                           {
+                               Name = "Prototype",
+                               Action = Prototype.PrototypeMain.Main,
+                           }
+                        },
+                        {
+                            5,
+                           new DesignPattern
+                           {
+                               Name = "Singleton",
+                               Action = Singleton.SingletonMain.Main,
+                           }
+                        },
+                    }
                 }
             },
             {
