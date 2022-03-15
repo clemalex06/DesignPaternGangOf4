@@ -159,7 +159,6 @@ namespace Main
                                Action = State.StateMain.Main,
                            }
                         },
-                        //,
                         {
                             9,
                            new DesignPattern
@@ -276,7 +275,65 @@ namespace Main
                 new DesignPatternType
                 {
                     Name = "Structuration",
-                    DesignPatterns = new Dictionary<int, DesignPattern>(),
+                    DesignPatterns = new Dictionary<int, DesignPattern>
+                    {
+                        {
+                            1,
+                           new DesignPattern
+                           {
+                               Name = "Adapter",
+                               Action = Adapter.AdapterMain.Main,
+                           }
+                        },
+                        {
+                            2,
+                           new DesignPattern
+                           {
+                               Name = "Bridge",
+                               Action = Bridge.BridgeMain.Main,
+                           }
+                        },
+                        {
+                            3,
+                           new DesignPattern
+                           {
+                               Name = "Composite",
+                               Action = Composite.CompositeMain.Main,
+                           }
+                        },
+                        {
+                            4,
+                           new DesignPattern
+                           {
+                               Name = "Decorator",
+                               Action = Decorator.DecoratorMain.Main,
+                           }
+                        },
+                        {
+                            5,
+                           new DesignPattern
+                           {
+                               Name = "Facade",
+                               Action = Facade.FacadeMain.Main,
+                           }
+                        },
+                        {
+                            6,
+                           new DesignPattern
+                           {
+                               Name = "FlighWeight",
+                               Action = FlighWeight.FlighWeightMain.Main,
+                           }
+                        },
+                        {
+                            7,
+                           new DesignPattern
+                           {
+                               Name = "Proxy",
+                               Action = Proxy.ProxyMain.Main,
+                           }
+                        },
+                    },
                 }
             },
         };

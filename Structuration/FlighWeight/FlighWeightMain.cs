@@ -9,9 +9,9 @@ namespace FlighWeight
      * d'objets dont le grain est fin
      * 
      */
-    public class Client
+    public static class FlighWeightMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var fabrique = new FabriqueOption();
             VehiculeCommande vehicule = new VehiculeCommande();
