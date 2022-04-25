@@ -10,9 +10,9 @@ namespace Observer
      * afin qu'ils puissent mettre à jour leurs état
      * 
      */
-    public class Utilisateur
+    public class ObserverMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var vehicule = new Vehicule();
             vehicule.description = "vehicule bon marche";

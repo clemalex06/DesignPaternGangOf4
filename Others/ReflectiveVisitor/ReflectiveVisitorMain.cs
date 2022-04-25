@@ -8,9 +8,9 @@ namespace ReflectiveVisitor
      * Visitor + Composite
      * 
      */
-    public class Utilisateur
+    public static class ReflectiveVisitorMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var societe1 = new SocieteSansFiliale("societe1",
                 "info@societe1.com,", "rue de la societe1");

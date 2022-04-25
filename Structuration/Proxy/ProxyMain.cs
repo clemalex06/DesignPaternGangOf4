@@ -9,9 +9,9 @@ namespace Proxy
      * qui controle son acces
      * 
      */
-    public class VueVehicule
+    public static class ProxyMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var animation = new AnimationProxy();
             animation.dessine();

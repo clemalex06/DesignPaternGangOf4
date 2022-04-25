@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectiveVisitor", "Others
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multicast", "Others\Multicast\Multicast.csproj", "{51043530-05A8-4DFF-8A1B-EC2272C57288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -177,6 +179,10 @@ Global
 		{51043530-05A8-4DFF-8A1B-EC2272C57288}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{51043530-05A8-4DFF-8A1B-EC2272C57288}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{51043530-05A8-4DFF-8A1B-EC2272C57288}.Release|anycpu.Build.0 = Release|Any CPU
+		{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

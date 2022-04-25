@@ -9,9 +9,9 @@ namespace Interpreter
      * * des expressions écrites dans ce langage
      * 
      */
-    public class Utilisateur
+    public static class InterpreterMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Expression expressionRequete = null;
             Console.WriteLine("Entrez votre requete");

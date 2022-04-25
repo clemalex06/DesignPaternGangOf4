@@ -10,9 +10,9 @@ namespace Visitor
      * sans modifier les classes de ces objets
      * 
      */
-    public class Utilisateur
+    public static class VisitorMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var societe1 = new SocieteSansFiliale("societe1",
                 "info@societe1.com", "rue de la societe1");

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BF90207-F6C9-44E8-9AB2-2CB9FED7334C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DesignPattern.cs" />
+    <Compile Include="DesignPatternType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comportement\ChainOfResponsability\ChainOfResponsability.csproj">
+      <Project>{9030f4b0-9a43-428a-aeab-fec36b4502d6}</Project>
+      <Name>ChainOfResponsability</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Command\Command.csproj">
+      <Project>{c8123a33-7391-4337-93df-f56ba7732976}</Project>
+      <Name>Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Interpreter\Interpreter.csproj">
+      <Project>{ad3d2359-d053-429a-a597-de1106d832f3}</Project>
+      <Name>Interpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Iterator\Iterator.csproj">
+      <Project>{c94d5c71-a315-4415-a2cf-25aca63caf12}</Project>
+      <Name>Iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Mediator\Mediator.csproj">
+      <Project>{545cea03-05cf-45f4-8b90-c0e8f3424243}</Project>
+      <Name>Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Memento\Memento.csproj">
+      <Project>{af884f4a-3c68-4ee3-a8eb-adf2488a1e9c}</Project>
+      <Name>Memento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Observer\Observer.csproj">
+      <Project>{576a952c-28a2-4fe8-b425-3ee535378379}</Project>
+      <Name>Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\State\State.csproj">
+      <Project>{79ad7ee9-e0b2-4490-9270-bc54a934acbc}</Project>
+      <Name>State</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Strategy\Strategy.csproj">
+      <Project>{bac929c0-ff37-4f56-97c0-5295c44c3bc2}</Project>
+      <Name>Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\TemplateMethod\TemplateMethod.csproj">
+      <Project>{57038233-9432-4db7-87f8-abdc73ea4a0b}</Project>
+      <Name>TemplateMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comportement\Visitor\Visitor.csproj">
+      <Project>{48c808d5-8725-4d59-b11b-2933b08529db}</Project>
+      <Name>Visitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Construction\AbstractFactory\AbstractFactory.csproj">
+      <Project>{31b499c2-d21c-49e0-a2c0-2942229307e5}</Project>
+      <Name>AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Construction\Builder\Builder.csproj">
+      <Project>{cc230caa-e1d2-4a94-9331-b46202857fca}</Project>
+      <Name>Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Construction\FactoryMethod\FactoryMethod.csproj">
+      <Project>{1f4d940e-8057-41c3-a86f-06b85145f7c7}</Project>
+      <Name>FactoryMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Construction\Prototype\Prototype.csproj">
+      <Project>{bf14b17c-7fb9-4750-b968-96ea5922f8e5}</Project>
+      <Name>Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Construction\Singleton\Singleton.csproj">
+      <Project>{450b1992-edd2-4d87-bb7d-ab2706339e7e}</Project>
+      <Name>Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Others\Multicast\Multicast.csproj">
+      <Project>{51043530-05a8-4dff-8a1b-ec2272c57288}</Project>
+      <Name>Multicast</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Others\PluggableFactory\PluggableFactory.csproj">
+      <Project>{f616a2ce-cff8-4451-9425-654188dc89a8}</Project>
+      <Name>PluggableFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Others\ReflectiveVisitor\ReflectiveVisitor.csproj">
+      <Project>{bc28eaf4-7573-43ac-a647-386883cc1879}</Project>
+      <Name>ReflectiveVisitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Adapter\Adapter.csproj">
+      <Project>{7e5bb804-6296-4f0c-9420-c08969f8580f}</Project>
+      <Name>Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Bridge\Bridge.csproj">
+      <Project>{77aafbd7-1e5d-4e03-82ba-4558baed47cd}</Project>
+      <Name>Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Composite\Composite.csproj">
+      <Project>{8ad980bf-759e-48fd-bf1d-a2d9febe188f}</Project>
+      <Name>Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Decorator\Decorator.csproj">
+      <Project>{5d7a0830-65da-4e28-945b-af038960192a}</Project>
+      <Name>Decorator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Facade\Facade.csproj">
+      <Project>{fd54c32b-36b3-4690-942d-d86b522e431c}</Project>
+      <Name>Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\FlighWeight\FlighWeight.csproj">
+      <Project>{9ab808cc-877e-4721-859b-55bd08747b3c}</Project>
+      <Name>FlighWeight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structuration\Proxy\Proxy.csproj">
+      <Project>{4b0738ef-205d-48ea-afdf-7647541ae107}</Project>
+      <Name>Proxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

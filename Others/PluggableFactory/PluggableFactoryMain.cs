@@ -8,9 +8,9 @@ namespace PluggableFactory
      * Abstract Factory + Prototype
      * 
      */
-    public class MainClass
+    public static class PluggableFactoryMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var protoAutoStandardBleu = new AutomobileElectricite();
             protoAutoStandardBleu.modele = "standard";

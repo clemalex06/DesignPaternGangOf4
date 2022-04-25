@@ -10,9 +10,9 @@ namespace Composite
      * basée sur un arbre
      * 
      */
-    public class Utilisateur
+    public static class CompositeMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var societe1 = new SocieteSansFilliale();
             societe1.ajouteVehicule();

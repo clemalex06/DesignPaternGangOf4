@@ -10,9 +10,9 @@ namespace Prototype
      * de la capacité de clonage 
      * 
      */
-    public class Utilisateur
+    public static class PrototypeMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             LiasseVierge liasseVierge = LiasseVierge.Instance();
 

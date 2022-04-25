@@ -10,9 +10,9 @@ namespace TemplateMethod
      * les sous classes
      * 
      */
-    public class Utilisateur
+    public static class TemplateMethodMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var commandeFrance = new CommandeFrance();
             commandeFrance.setMontantHt(10000);
