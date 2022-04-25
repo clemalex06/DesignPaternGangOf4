@@ -4,53 +4,52 @@ namespace AbstractFactory
 {
 
     /*
-     * Concept de l'abstract Factory
-     *a pour objectif la création d'objet regroupés en famille sanse devoir connaître
-     * les classes concrêtes destinées à la création de ces objets
+     * Abstract Factory's Concept :  
+	 * Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects
      * 
      */
     public class AbstractFactoryMain
     {
-        public static int nbAutos = 3;
-        public static int nbScooters = 2;
+        public static int numberOfCars = 3;
+        public static int numberOfMotos = 2;
 
         public static void Main()
         {
-            FabriqueVehicule fabrique;
-            Automobile[] autos = new Automobile[nbAutos];
-            Scooter[] scooters = new Scooter[nbScooters];
+            VehicleFactory factory;
+            Car[] cars = new Car[numberOfCars];
+            Moto[] scooters = new Moto[numberOfMotos];
 
-            Console.WriteLine("Voulez-vous utiliser des vehicules electriques (1) " +
-                "ou essence (2)?");
+            Console.WriteLine("Do you want to use Electric (1) " +
+                "or Gasoline vehicles (2) Vehicles?");
             string choix = Console.ReadLine();
 
             if (choix == "1")
             {
-                fabrique = new FabriqueVehiculeElectrique();
+                factory = new ElectricVehicleFactory();
             }
             else
             {
-                fabrique = new FabriqueVehiculeEssence();
+                factory = new GasolineVehicleFactory();
             }
 
-            for (int i=0; i < nbAutos; i++)
+            for (int i=0; i < numberOfCars; i++)
             {
-                autos[i] = fabrique.CreeAutomobile("modele auto " + i, "vert" + i, 6 + i, 3.2);
+                cars[i] = factory.CreateCar("CarModel" + i, "Green", 6 + i, 3.2);
             }
 
-            for (int i = 0; i < nbScooters; i++)
+            for (int i = 0; i < numberOfMotos; i++)
             {
-                scooters[i] = fabrique.CreeScooter("modele sccoter " + i, "jaune", 2 + i);
+                scooters[i] = factory.CreateMoto("MotoModel" + i, "Yellow", 2 + i);
             }
 
-            foreach(var auto in autos)
+            foreach(var car in cars)
             {
-                auto.afficheCaracteristique();
+                car.DisplayFeatures();
             }
 
             foreach(var scooter in scooters)
             {
-                scooter.afficheCaracteristique();
+                scooter.DisplayFeatures();
             }
         }
     }

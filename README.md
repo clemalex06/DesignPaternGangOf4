@@ -1,14 +1,9 @@
 # DesignPaternGangOf4
 C# command line solution to implement the basics design Patterns of Gang Of 4
 
-
-Construction
-    AbstractFactory
-
     /*
-     * Concept de l'abstract Factory
-     *a pour objectif la création d'objet regroupés en famille sanse devoir connaître
-     * les classes concrêtes destinées à la création de ces objets
+     * Abstract Factory's Concept :  
+	 * Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects
      * 
      */
 
