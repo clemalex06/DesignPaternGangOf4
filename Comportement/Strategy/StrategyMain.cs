@@ -9,9 +9,9 @@ namespace Strategy
      * d'un besoin sans changer les interactions avec le client de cet objet
      * 
      */
-    public class Utilisateur
+    public static class StrategyMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var vueCatalogue1 = new VueCatalogue(new DessinTroisVehiculeLigne());
             vueCatalogue1.dessine();

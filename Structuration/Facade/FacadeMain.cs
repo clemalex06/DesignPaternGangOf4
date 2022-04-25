@@ -11,9 +11,9 @@ namespace Facade
      * à utiliser
      * 
      */
-    public class UtilisateurWebService
+    public static class FacadeMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var webServiceAuto = new WebServiceAutoImpl();
 

@@ -2,7 +2,7 @@
 
 namespace Command
 {
-    public class Utilisateur
+    public class CommandMain
     {
 
         /*
@@ -13,7 +13,7 @@ namespace Command
          * requêtes et leur suivi
          * 
          */
-        public static void Main(string[] args)
+        public static void Main()
         {
             var vehicule1 = new Vehicule("A01", 1, 1000);
             var vehicule2 = new Vehicule("A02", 6, 2000);

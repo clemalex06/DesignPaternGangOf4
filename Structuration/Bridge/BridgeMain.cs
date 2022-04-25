@@ -7,9 +7,9 @@ namespace Bridge
      * a pour but de séparer les aspects conceptuels d'une hiérachie
      * de classes de leur implantation
      */
-    public class Utilisateur
+    public static class BridgeMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             FormulaireImmatriculationLuxembourg formulaire1 =
                 new FormulaireImmatriculationLuxembourg(

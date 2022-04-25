@@ -10,9 +10,9 @@ namespace ChainOfResponsability
      *  successeurs jusqu'à ce que l'un d'entre eux y réponde
      * 
      */
-    public class Utilisateur
+    public static class ChainOfResponsabilityMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             ObjetBase vehicule1 = new Vehicule("Auto++ KT500 Véhicule en bon" +
                 "etat");

@@ -8,9 +8,9 @@ namespace FactoryMethod
      *la création effective
      * 
      */
-    public class Utilisateur
+    public static class FactoryMethodMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Client client;
             client = new ClientComptant();

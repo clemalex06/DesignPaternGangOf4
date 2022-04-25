@@ -10,9 +10,9 @@ namespace Multicast
      * d'inscription des récepteurs auprès des expéditeurs
      * 
      */
-    public class Concession
+    public static class MulticastMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var directionGenerale = new DirectionGenerale();
             var directionCommerciale = new DirectionCommerciale();

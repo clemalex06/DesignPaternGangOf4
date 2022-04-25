@@ -10,9 +10,9 @@ namespace Builder
      * 
      */
 
-    public class ClientVehicule
+    public static class BuilderMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             ConstructeurLiasseVehicule constructeur;
             Console.WriteLine(" voulez construire des liasses html (1) ou des liasses pdf (2) :");

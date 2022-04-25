@@ -9,9 +9,9 @@ namespace Singleton
      * et de fournir une méthode unique retournant cette instance
      * 
      */
-    public class TestVendeur
+    public static class SingletonMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Vendeur levendeur = Vendeur.Instance();
             levendeur.addresse = "1 allée des chaumieres";

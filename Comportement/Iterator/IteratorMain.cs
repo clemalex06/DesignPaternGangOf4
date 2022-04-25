@@ -9,9 +9,9 @@ namespace Iterator
      * sans que les clients se préoccupent de l'implémentation de cette collection
      * 
      */
-    public class Utilisateur
+    public static class IteratorMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var catalogue = new CatalogueVehicule();
             var iterateur =catalogue.recherche("bon marche");

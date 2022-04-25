@@ -9,12 +9,12 @@ namespace AbstractFactory
      * les classes concrêtes destinées à la création de ces objets
      * 
      */
-    public class Catalogue
+    public class AbstractFactoryMain
     {
         public static int nbAutos = 3;
         public static int nbScooters = 2;
 
-        public static void Main(string[] args)
+        public static void Main()
         {
             FabriqueVehicule fabrique;
             Automobile[] autos = new Automobile[nbAutos];

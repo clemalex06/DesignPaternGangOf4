@@ -8,9 +8,9 @@ namespace Memento
      * sauvegarde et restaure l'etat d'un objet
      * 
      */
-    public class Utilisateur
+    public static class MementoMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Memento memento;
             var option1 = new OptionVehicule("Sieges en cuir");

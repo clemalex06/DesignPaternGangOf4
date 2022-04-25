@@ -8,9 +8,9 @@ namespace Decorator
      * à un objet 
      * 
      */
-    public class VueCatalogue
+    public static class DecoratorMain
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var vueVehicule = new VueVehicule();
             var modeleDecorateur = new ModeleDecorateur(vueVehicule);
