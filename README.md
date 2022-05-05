@@ -4,17 +4,10 @@ C# command line solution to implement the basics design Patterns of Gang Of 4
 ## Construction Design Patterns 
 
 ### Abstract Factory's Concept :  
-Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects
-
-    Builder
-
-    /*
-     *
-     * Concept du Builder
-     * permet de séparer la construction d'objets complexes de leur implantation
-     * de sorte qu'un client puisse créer ces objets complexes avec des implantations différentes 
-     * 
-     */
+Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects.
+   
+### Builder's Concept :
+Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
 
     FactoryMethod
 

@@ -4,9 +4,8 @@ namespace Builder
 {
     /*
      *
-     * Concept du Builder
-     * permet de séparer la construction d'objets complexes de leur implantation
-     * de sorte qu'un client puisse créer ces objets complexes avec des implantations différentes 
+     * Builder's Concept :
+     * Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
      * 
      */
 
@@ -14,21 +13,21 @@ namespace Builder
     {
         public static void Main()
         {
-            ConstructeurLiasseVehicule constructeur;
-            Console.WriteLine(" voulez construire des liasses html (1) ou des liasses pdf (2) :");
-            string choix = Console.ReadLine();
-            if (choix == "1")
+            BundleForVehicule bundleForVehicule;
+            Console.WriteLine(" Hello Sale Man : do you want to use 'HTML' bundle for vhehicules(1) or 'PDF' bundle for vhehicules(Default) ??");
+            string choice = Console.ReadLine();
+            if (choice == "1")
             {
-                constructeur = new ConstructeurLiasseVehiculeHtml();
+                bundleForVehicule = new HtmlBundleForVehicule();
             }
             else
             {
-                constructeur = new ConstructeurLiasseVehiculePdf();
+                bundleForVehicule = new PdfBundleForVehicule();
             }
 
-            var vendeur = new Vendeur(constructeur);
-            Liasse liasse = vendeur.construit("Martin");
-            liasse.imprime();
+            var salesMan = new SalesMan(bundleForVehicule);
+            Bundle bundle = salesMan.Build("Martin");
+            bundle.Print();
         }
     }
 }
