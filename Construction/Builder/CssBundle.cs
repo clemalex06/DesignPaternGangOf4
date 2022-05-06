@@ -1,20 +1,20 @@
 ﻿using System;
 namespace Builder
 {
-    public class HtmlBundle : Bundle
+    public class CssBundle : Bundle
     {
         public override void AddDocument(string document)
         {
-            if (document.StartsWith("<html>"))
+            if (document.StartsWith("<style>"))
 
             {
                 content.Add(document);
             }
         }
 
-        public override void Print()
+        public override void DisplayBundleContent()
         {
-            Console.WriteLine("HTML Bundle");
+            Console.WriteLine("CSS Bundles");
             foreach (var s in content)
             {
                 Console.WriteLine(s);

@@ -13,21 +13,21 @@ namespace Builder
     {
         public static void Main()
         {
-            BundleForVehicule bundleForVehicule;
-            Console.WriteLine(" Hello Sale Man : do you want to use 'HTML' bundle for vhehicules(1) or 'PDF' bundle for vhehicules(Default) ??");
+            BundleForWebsite bundleForWebsite;
+            Console.WriteLine(" Hello Developer : do you want to use 'JAVASCRIPT' Bundles(1) or 'CSS' Bundles(Default) for your website??");
             string choice = Console.ReadLine();
             if (choice == "1")
             {
-                bundleForVehicule = new HtmlBundleForVehicule();
+                bundleForWebsite = new JavascriptBundleForWebsite();
             }
             else
             {
-                bundleForVehicule = new PdfBundleForVehicule();
+                bundleForWebsite = new CssBundleForWebsite();
             }
 
-            var salesMan = new SalesMan(bundleForVehicule);
-            Bundle bundle = salesMan.Build("Martin");
-            bundle.Print();
+            var website = new Website(bundleForWebsite);
+            Bundle bundle = website.InitializeBundleContent("Linkedin");
+            bundle.DisplayBundleContent();
         }
     }
 }

@@ -35,12 +35,12 @@
     <Compile Include="BuilderMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bundle.cs" />
-    <Compile Include="HtmlBundle.cs" />
-    <Compile Include="PdfBundle.cs" />
-    <Compile Include="BundleForVehicule.cs" />
-    <Compile Include="HtmlBundleForVehicule.cs" />
-    <Compile Include="PdfBundleForVehicule.cs" />
-    <Compile Include="SalesMan.cs" />
+    <Compile Include="JavascriptBundle.cs" />
+    <Compile Include="CssBundle.cs" />
+    <Compile Include="BundleForWebsite.cs" />
+    <Compile Include="JavascriptBundleForWebsite.cs" />
+    <Compile Include="CssBundleForWebsite.cs" />
+    <Compile Include="Website.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

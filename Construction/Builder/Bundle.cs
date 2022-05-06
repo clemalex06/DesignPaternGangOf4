@@ -8,6 +8,6 @@ namespace Builder
         protected IList<string> content = new List<string>();
 
         public abstract void AddDocument(string document);
-        public abstract void Print();
+        public abstract void DisplayBundleContent();
     }
 }
