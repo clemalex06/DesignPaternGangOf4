@@ -1,28 +1,28 @@
 ﻿using System.Collections.Generic;
 namespace Prototype
 {
-    public class LiasseVierge:Liasse
+    public class EmptyDocumentList : DocumentList
     {
-        private static LiasseVierge _instance;
+        private static EmptyDocumentList _instance;
 
-        private LiasseVierge()
+        private EmptyDocumentList()
         {
             documents = new List<Document>();
         }
 
-        public static LiasseVierge Instance()
+        public static EmptyDocumentList Instance()
         {
             if (_instance == null)
-                _instance = new LiasseVierge();
+                _instance = new EmptyDocumentList();
             return _instance;
         }
 
-        public void ajoute(Document doc)
+        public void Add(Document doc)
         {
             documents.Add(doc);
         }
 
-        public void retire(Document doc)
+        public void Remove(Document doc)
         {
             documents.Remove(doc);
         }

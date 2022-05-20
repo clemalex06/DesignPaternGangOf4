@@ -12,16 +12,8 @@ Allows the construction of complex objects to be separated from their layout, so
 ### Factory Method's Concept :
 Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
-    Prototype
-
-    /*
-     *
-     * Concept du prototype
-     * permet la creation de nouveaux objets par duplication
-     * d'objets existants appelés prototypes qui disposent
-     * de la capacité de clonage 
-     * 
-     */
+### Prototype's Concept :
+Creates duplicate object while keeping performance in mind. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
 
     Singleton
 

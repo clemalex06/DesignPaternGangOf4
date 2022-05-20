@@ -3,9 +3,8 @@
 namespace FactoryMethod
 {
     /*
-     *Concept de la Factory Method
-     *a pour but d'introduire une méthode abstraite de création d'un objet en reportant aux sous classes concrêtes
-     *la création effective
+     * Factory Method's Concept :
+     * Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
      * 
      */
     public static class FactoryMethodMain

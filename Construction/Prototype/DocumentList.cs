@@ -2,7 +2,7 @@
 
 namespace Prototype
 {
-    public abstract class Liasse
+    public abstract class DocumentList
     {
         public IList<Document> documents { get; protected set; }
     }

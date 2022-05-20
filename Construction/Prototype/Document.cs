@@ -3,21 +3,21 @@ namespace Prototype
 {
     public abstract class Document
     {
-        protected string contenu = "";
+        protected string Content = "";
 
-        public Document duplique()
+        public Document Duplicate()
         {
-            Document resultat;
-            resultat = (Document)this.MemberwiseClone();
-            return resultat;
+            Document result;
+            result = (Document)this.MemberwiseClone();
+            return result;
         }
 
-        public void remplit (string informations)
+        public void FillOut (string informations)
         {
-            contenu = informations;
+            Content = informations;
         }
 
-        public abstract void imprime();
-        public abstract void affiche();
+        public abstract void Print();
+        public abstract void Display();
     }
 }
