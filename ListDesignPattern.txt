@@ -34,10 +34,8 @@
     Singleton
 
     /*
-     *
-     *Concept du singleton
-     * permet de s'assurer qu'une classe ne possède qu'une seule instance
-     * et de fournir une méthode unique retournant cette instance
+     * Singleton's Concept :
+     * restricts the instantiation of a class to one "single" instance.
      * 
      */
 
