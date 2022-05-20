@@ -3,28 +3,25 @@
 namespace Prototype
 {
     /*
-     *
-     * Concept du prototype
-     * permet la creation de nouveaux objets par duplication
-     * d'objets existants appelés prototypes qui disposent
-     * de la capacité de clonage 
+     * Prototype's Concept :
+     * Creates duplicate object while keeping performance in mind. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
      * 
      */
     public static class PrototypeMain
     {
         public static void Main()
         {
-            LiasseVierge liasseVierge = LiasseVierge.Instance();
+            EmptyDocumentList emptyDocumentList = EmptyDocumentList.Instance();
 
-            liasseVierge.ajoute(new BonDeCommande());
-            liasseVierge.ajoute(new CertificatSession());
-            liasseVierge.ajoute(new DemandeImmatriculation());
+            emptyDocumentList.Add(new PurchaseOrderDocument());
+            emptyDocumentList.Add(new SessionCertificateDocument());
+            emptyDocumentList.Add(new ApplicationForRegistrationDocument());
 
-            LiasseClient liasseClient1 = new LiasseClient("Martin");
-            LiasseClient liasseClient2 = new LiasseClient("Durant");
+            CustomerDocumentList customerDocumentList1 = new CustomerDocumentList("Martin");
+            CustomerDocumentList customerDocumentList2 = new CustomerDocumentList("Durant");
 
-            liasseClient1.affiche();
-            liasseClient2.affiche();
+            customerDocumentList1.Display();
+            customerDocumentList2.Display();
         }
     }
 }

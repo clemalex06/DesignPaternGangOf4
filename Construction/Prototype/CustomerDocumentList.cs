@@ -1,32 +1,32 @@
 ﻿using System.Collections.Generic;
 namespace Prototype
 {
-    public class LiasseClient:Liasse
+    public class CustomerDocumentList : DocumentList
     {
-        public LiasseClient(string informations)
+        public CustomerDocumentList(string informations)
         {
             documents = new List<Document>();
-            LiasseVierge laLiassevIerge = LiasseVierge.Instance();
+            EmptyDocumentList laLiassevIerge = EmptyDocumentList.Instance();
             IList<Document> documentsVierges = laLiassevIerge.documents;
 
             foreach (var doc in documentsVierges)
             {
-                Document copieDocument = doc.duplique();
-                copieDocument.remplit(informations);
+                Document copieDocument = doc.Duplicate();
+                copieDocument.FillOut(informations);
                 documents.Add(copieDocument);
             }
         }
 
-        public void affiche()
+        public void Display()
         {
             foreach (var doc in documents)
-                doc.affiche();
+                doc.Display();
         }
 
-        public void imprime()
+        public void Print()
         {
             foreach (var doc in documents)
-                doc.imprime();
+                doc.Print();
         }
     }
 }
