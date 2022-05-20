@@ -15,17 +15,10 @@ Defines an interface for creating an object, but let subclasses decide which cla
 ### Prototype's Concept :
 Creates duplicate object while keeping performance in mind. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
 
-    Singleton
+### Singleton's Concept :
+Restricts the instantiation of a class to one "single" instance.
 
-    /*
-     *
-     *Concept du singleton
-     * permet de s'assurer qu'une classe ne possède qu'une seule instance
-     * et de fournir une méthode unique retournant cette instance
-     * 
-     */
-
-Structuration
+## Structuration Design Patterns 
     Adapter
 
     /*
