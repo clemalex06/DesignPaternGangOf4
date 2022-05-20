@@ -34,12 +34,12 @@
   <ItemGroup>
     <Compile Include="FactoryMethodMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commande.cs" />
-    <Compile Include="CommandeComptant.cs" />
-    <Compile Include="CommandeCredit.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="ClientComptant.cs" />
-    <Compile Include="ClientCredit.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="CashOrder.cs" />
+    <Compile Include="CreditOrder.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerOnCash.cs" />
+    <Compile Include="CustomerOnCredit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
