@@ -4,9 +4,8 @@ namespace Builder
 {
     /*
      *
-     * Concept du Builder
-     * permet de séparer la construction d'objets complexes de leur implantation
-     * de sorte qu'un client puisse créer ces objets complexes avec des implantations différentes 
+     * Builder's Concept :
+     * Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
      * 
      */
 
@@ -14,21 +13,21 @@ namespace Builder
     {
         public static void Main()
         {
-            ConstructeurLiasseVehicule constructeur;
-            Console.WriteLine(" voulez construire des liasses html (1) ou des liasses pdf (2) :");
-            string choix = Console.ReadLine();
-            if (choix == "1")
+            BundleForWebsite bundleForWebsite;
+            Console.WriteLine(" Hello Developer : do you want to use 'JAVASCRIPT' Bundles(1) or 'CSS' Bundles(Default) for your website??");
+            string choice = Console.ReadLine();
+            if (choice == "1")
             {
-                constructeur = new ConstructeurLiasseVehiculeHtml();
+                bundleForWebsite = new JavascriptBundleForWebsite();
             }
             else
             {
-                constructeur = new ConstructeurLiasseVehiculePdf();
+                bundleForWebsite = new CssBundleForWebsite();
             }
 
-            var vendeur = new Vendeur(constructeur);
-            Liasse liasse = vendeur.construit("Martin");
-            liasse.imprime();
+            var website = new Website(bundleForWebsite);
+            Bundle bundle = website.InitializeBundleContent("Linkedin");
+            bundle.DisplayBundleContent();
         }
     }
 }

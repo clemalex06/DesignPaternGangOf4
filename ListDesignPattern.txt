@@ -2,9 +2,8 @@
     AbstractFactory
 
     /*
-     * Concept de l'abstract Factory
-     *a pour objectif la création d'objet regroupés en famille sanse devoir connaître
-     * les classes concrêtes destinées à la création de ces objets
+     * Abstract Factory's Concept :
+     * Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects.
      * 
      */
 
@@ -12,9 +11,8 @@
 
     /*
      *
-     * Concept du Builder
-     * permet de séparer la construction d'objets complexes de leur implantation
-     * de sorte qu'un client puisse créer ces objets complexes avec des implantations différentes 
+     * Builder's Concept :
+     * Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
      * 
      */
 

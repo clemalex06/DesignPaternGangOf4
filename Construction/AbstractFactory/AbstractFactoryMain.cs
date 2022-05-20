@@ -5,7 +5,7 @@ namespace AbstractFactory
 
     /*
      * Abstract Factory's Concept :  
-	 * Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects
+	 * Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects.
      * 
      */
     public class AbstractFactoryMain

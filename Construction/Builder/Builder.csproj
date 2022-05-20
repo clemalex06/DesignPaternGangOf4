@@ -34,13 +34,13 @@
   <ItemGroup>
     <Compile Include="BuilderMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Liasse.cs" />
-    <Compile Include="LiasseHtml.cs" />
-    <Compile Include="LiassePdf.cs" />
-    <Compile Include="ConstructeurLiasseVehicule.cs" />
-    <Compile Include="ConstructeurLiasseVehiculeHtml.cs" />
-    <Compile Include="ConstructeurLiasseVehiculePdf.cs" />
-    <Compile Include="Vendeur.cs" />
+    <Compile Include="Bundle.cs" />
+    <Compile Include="JavascriptBundle.cs" />
+    <Compile Include="CssBundle.cs" />
+    <Compile Include="BundleForWebsite.cs" />
+    <Compile Include="JavascriptBundleForWebsite.cs" />
+    <Compile Include="CssBundleForWebsite.cs" />
+    <Compile Include="Website.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
