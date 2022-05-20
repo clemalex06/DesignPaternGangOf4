@@ -9,14 +9,8 @@ Aims to create objects grouped into families without having to know the concrete
 ### Builder's Concept :
 Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
 
-    FactoryMethod
-
-    /*
-     *Concept de la Factory Method
-     *a pour but d'introduire une méthode abstraite de création d'un objet en reportant aux sous classes concrêtes
-     *la création effective
-     * 
-     */
+### Factory Method's Concept :
+Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
     Prototype
 

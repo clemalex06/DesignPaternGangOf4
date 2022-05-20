@@ -12,14 +12,14 @@ namespace FactoryMethod
     {
         public static void Main()
         {
-            Client client;
-            client = new ClientComptant();
-            client.nouvelleCommande(2000);
-            client.nouvelleCommande(10000);
+            Customer client;
+            client = new CustomerOnCash();
+            client.NewOrder(2000);
+            client.NewOrder(10000);
 
-            client = new ClientCredit();
-            client.nouvelleCommande(2000);
-            client.nouvelleCommande(10000);
+            client = new CustomerOnCredit();
+            client.NewOrder(2000);
+            client.NewOrder(10000);
         }
     }
 }
