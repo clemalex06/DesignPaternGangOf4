@@ -23,13 +23,8 @@ Restricts the instantiation of a class to one "single" instance.
 ### Adapter's Concept : 
 Allows objects with incompatible interfaces to collaborate.
 
-    Bridge
-
-    /*
-     * Concept du Bridge :
-     * a pour but de séparer les aspects conceptuels d'une hiérachie
-     * de classes de leur implantation
-     */
+### Bridge's Concept :
+Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
     Composite
 

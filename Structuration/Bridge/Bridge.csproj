@@ -34,12 +34,12 @@
   <ItemGroup>
     <Compile Include="BridgeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormulaireImpl.cs" />
-    <Compile Include="FormulaireHtmlImpl.cs" />
-    <Compile Include="FormulaireAppletImpl.cs" />
-    <Compile Include="FormulaireImmatriculation.cs" />
-    <Compile Include="FormulaireImmatriculationFrance.cs" />
-    <Compile Include="FormulaireImmatriculationLuxembourg.cs" />
+    <Compile Include="IFormImplementation.cs" />
+    <Compile Include="HtmlForm.cs" />
+    <Compile Include="ReactForm.cs" />
+    <Compile Include="InsuranceNumberForm.cs" />
+    <Compile Include="InsuranceNumberFormFrance.cs" />
+    <Compile Include="InsuranceNumberFormSpain.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

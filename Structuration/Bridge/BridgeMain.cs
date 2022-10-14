@@ -3,28 +3,30 @@
 namespace Bridge
 {
     /*
-     * Concept du Bridge :
-     * a pour but de séparer les aspects conceptuels d'une hiérachie
-     * de classes de leur implantation
+     * Bridge's Concept :
+     * Lets you split a large class or a set of closely related classes
+     * into two separate hierarchies—abstraction and implementation—which 
+     * can be developed independently of each other.
      */
+
     public static class BridgeMain
     {
         public static void Main()
         {
-            FormulaireImmatriculationLuxembourg formulaire1 =
-                new FormulaireImmatriculationLuxembourg(
-                    new FormulaireHtmlImpl());
-            formulaire1.affiche();
-            if (formulaire1.gereSaisie())
-                formulaire1.genereDocument();
+            InsuranceNumberFormSpain spainForm =
+                new InsuranceNumberFormSpain(
+                    new HtmlForm());
+            spainForm.Display();
+            if (spainForm.ManageInput())
+                spainForm.GenerateNumber();
             Console.WriteLine();
 
-            FormulaireImmatriculationFrance formulaire2 =
-                new FormulaireImmatriculationFrance(
-                    new FormulaireAppletImpl());
-            formulaire2.affiche();
-            if (formulaire2.gereSaisie())
-                formulaire2.genereDocument();
+            InsuranceNumberFormFrance frenchForm =
+                new InsuranceNumberFormFrance(
+                    new ReactForm());
+            frenchForm.Display();
+            if (frenchForm.ManageInput())
+                frenchForm.GenerateNumber();
         }
     }
 }
