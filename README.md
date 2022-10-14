@@ -3,7 +3,7 @@ C# command line solution to implement the basics design Patterns of Gang Of 4
 
 ## Construction Design Patterns 
 
-### Abstract Factory's Concept :  
+### Abstract Factory 
 Aims to create objects grouped into families without having to know the concrete classes intended for the creation of these objects.
    
 ### Builder's Concept :
@@ -19,15 +19,9 @@ Creates duplicate object while keeping performance in mind. This type of design 
 Restricts the instantiation of a class to one "single" instance.
 
 ## Structuration Design Patterns 
-    Adapter
 
-    /*
-     *
-     *Concept de l'Adapter
-     * a pour but de convertir l'interface d'une classe existante en l'interface
-     * attendue par des clients également existant afin qu'ils puissent
-     * travailler ensemble
-     */
+### Adapter's Concept : 
+Allows objects with incompatible interfaces to collaborate.
 
     Bridge
 
