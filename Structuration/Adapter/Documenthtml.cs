@@ -3,27 +3,27 @@ namespace Adapter
 {
     public class Documenthtml:Document
     {
-        protected string _contenu;
+        protected string _content;
 
-        public string contenu {
+        public string Content {
             get
             {
-                return _contenu;
+                return _content;
             }
             set
             {
-                _contenu = value;
+                _content = value;
             }
         }
 
-        public void dessine()
+        public void Draw()
         {
-            Console.WriteLine($"Dessine document Html : {contenu}");
+            Console.WriteLine($"Draw document Html : {Content}");
         }
 
-        public void imprime()
+        public void Print()
         {
-            Console.WriteLine($"Imprime document Html : {contenu}");
+            Console.WriteLine($"Print document Html : {Content}");
         }
     }
 }

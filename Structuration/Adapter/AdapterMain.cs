@@ -15,12 +15,12 @@ namespace Adapter
         {
             Document document1, document2;
             document1 = new Documenthtml();
-            document1.contenu = "Hello";
-            document1.dessine();
+            document1.Content = "Hello Html";
+            document1.Draw();
             Console.WriteLine();
             document2 = new DocumentPdf();
-            document2.contenu = "Bonjour";
-            document2.dessine();
+            document2.Content = "Hello Pdf";
+            document2.Draw();
         }
     }
 }

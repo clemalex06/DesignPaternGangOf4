@@ -37,7 +37,7 @@
     <Compile Include="Document.cs" />
     <Compile Include="Documenthtml.cs" />
     <Compile Include="DocumentPdf.cs" />
-    <Compile Include="ComposantPdf.cs" />
+    <Compile Include="ComponentPdf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

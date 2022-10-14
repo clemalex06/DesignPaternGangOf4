@@ -4,26 +4,26 @@ namespace Adapter
     public class DocumentPdf : Document
     {
 
-        protected ComposantPdf outilPdf = new ComposantPdf();
+        protected ComponentPdf ComponentPdf = new ComponentPdf();
 
-        public string contenu
+        public string Content
         {
             set
             {
-                outilPdf.pdfFixeContenu(value);
+                ComponentPdf.PdfSetContent(value);
             }
         }
 
-        public void dessine()
+        public void Draw()
         {
-            outilPdf.prepareAffichage();
-            outilPdf.pdfRaffraichit();
-            outilPdf.pdfTermineAffichage();
+            ComponentPdf.StartDisplay();
+            ComponentPdf.Refresh();
+            ComponentPdf.EndDisplay();
         }
 
-        public void imprime()
+        public void Print()
         {
-            outilPdf.pdfEnvoiImprimante();
+            ComponentPdf.SendToPrinter();
         }
     }
 }
