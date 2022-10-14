@@ -3,12 +3,11 @@
 namespace Adapter
 {
     /*
-     *
-     *Concept de l'Adapter
-     * a pour but de convertir l'interface d'une classe existante en l'interface
-     * attendue par des clients également existant afin qu'ils puissent
-     * travailler ensemble
+     * Adapter's Concept :
+     * Allows objects with incompatible interfaces to collaborate.
+     * 
      */
+
     public static class AdapterMain
     {
         public static void Main()
