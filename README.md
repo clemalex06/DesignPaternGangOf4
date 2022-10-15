@@ -26,16 +26,9 @@ Allows objects with incompatible interfaces to collaborate.
 ### Bridge's Concept :
 Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
-    Composite
 
-    /*
-     *
-     * Concept du composite
-     * offre un cadre de onception d'une composition
-     * dont la profondeur de composition est variable, la conception etant
-     * basée sur un arbre
-     * 
-     */
+### Composite's Concept :
+Lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
     Decorator
 

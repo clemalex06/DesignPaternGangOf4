@@ -3,30 +3,28 @@
 namespace Composite
 {
     /*
-     *
-     * Concept du composite
-     * offre un cadre de onception d'une composition
-     * dont la profondeur de composition est variable, la conception etant
-     * basée sur un arbre
-     * 
+     * Composite's Concept :
+     * Lets you compose objects into 
+     * tree structures and then work 
+     * with these structures as if they were individual objects.
      */
     public static class CompositeMain
     {
         public static void Main()
         {
-            var societe1 = new SocieteSansFilliale();
-            societe1.ajouteVehicule();
-            var societe2 = new SocieteSansFilliale();
-            societe2.ajouteVehicule();
-            societe2.ajouteVehicule();
+            var company1= new CompanyWithoutSubsidiary();
+            company1.AddCar();
+            var company2 = new CompanyWithoutSubsidiary();
+            company2.AddCar();
+            company2.AddCar();
 
-            var groupe = new SocieteMere();
-            groupe.ajouteVehicule();
-            groupe.AjouteFiliale(societe1);
-            groupe.AjouteFiliale(societe2);
-            Console.WriteLine($"Cout d'entretien total" +
-                $" du groupe : " +
-                $"{groupe.CalculeCoutEntretien()}");
+            var parentCompany = new ParentCompany();
+            parentCompany.AddCar();
+            parentCompany.AddSubsidiaryCompany(company1);
+            parentCompany.AddSubsidiaryCompany(company2);
+            Console.WriteLine($"Total Compute Maintenance Cost" +
+                $" from Parent Company : " +
+                $"{parentCompany.ComputeMaintenanceCost()}");
 
         }
     }

@@ -34,9 +34,9 @@
   <ItemGroup>
     <Compile Include="CompositeMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Societe.cs" />
-    <Compile Include="SocieteSansFilliale.cs" />
-    <Compile Include="SocieteMere.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="CompanyWithoutSubsidiary.cs" />
+    <Compile Include="ParentCompany.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
