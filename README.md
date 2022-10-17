@@ -1,5 +1,7 @@
 # DesignPaternGangOf4
-C# command line solution to implement the basics design Patterns of Gang Of 4
+C# command line solution to implement the basics design Patterns of Gang Of 4.
+To know more about the topic, check this link : 
+[refactoring guru design patterns](https://refactoring.guru/design-patterns)
 
 ## Construction Design Patterns 
 
@@ -30,14 +32,8 @@ Lets you split a large class or a set of closely related classes into two separa
 ### Composite's Concept :
 Lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
-    Decorator
-
-    /*
-     *
-     * Permet d'ajouter dynamiquement des fonctionnalités supplémentaires
-     * à un objet 
-     * 
-     */
+### Decorator's Concept :
+Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
     Facade
 
