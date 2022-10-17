@@ -34,11 +34,11 @@
   <ItemGroup>
     <Compile Include="DecoratorMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ComposantGraphiqueVehicule.cs" />
-    <Compile Include="VueVehicule.cs" />
-    <Compile Include="Decorateur.cs" />
-    <Compile Include="ModeleDecorateur.cs" />
-    <Compile Include="MarqueDecorateur.cs" />
+    <Compile Include="ICarDisplayComponent.cs" />
+    <Compile Include="ViewCar.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="DecoratorForModel.cs" />
+    <Compile Include="DecoratorForBrand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
