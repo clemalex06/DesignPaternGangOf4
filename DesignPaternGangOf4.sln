@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Construction", "Construction", "{A42DB105-E97C-4E57-A31E-1C1FED6406D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{A42DB105-E97C-4E57-A31E-1C1FED6406D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structuration", "Structuration", "{5B7784FE-A676-447E-B0C9-94449C75E8D2}"
 EndProject
@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ListDesignPattern.txt = ListDesignPattern.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Construction\AbstractFactory\AbstractFactory.csproj", "{31B499C2-D21C-49E0-A2C0-2942229307E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Creational\AbstractFactory\AbstractFactory.csproj", "{31B499C2-D21C-49E0-A2C0-2942229307E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Construction\Builder\Builder.csproj", "{CC230CAA-E1D2-4A94-9331-B46202857FCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Creational\Builder\Builder.csproj", "{CC230CAA-E1D2-4A94-9331-B46202857FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Construction\FactoryMethod\FactoryMethod.csproj", "{1F4D940E-8057-41C3-A86F-06B85145F7C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Creational\FactoryMethod\FactoryMethod.csproj", "{1F4D940E-8057-41C3-A86F-06B85145F7C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Construction\Prototype\Prototype.csproj", "{BF14B17C-7FB9-4750-B968-96EA5922F8E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Creational\Prototype\Prototype.csproj", "{BF14B17C-7FB9-4750-B968-96EA5922F8E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Construction\Singleton\Singleton.csproj", "{450B1992-EDD2-4D87-BB7D-AB2706339E7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Creational\Singleton\Singleton.csproj", "{450B1992-EDD2-4D87-BB7D-AB2706339E7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structuration\Adapter\Adapter.csproj", "{7E5BB804-6296-4F0C-9420-C08969F8580F}"
 EndProject

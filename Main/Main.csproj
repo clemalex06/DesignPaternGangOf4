@@ -96,23 +96,23 @@
       <Project>{48c808d5-8725-4d59-b11b-2933b08529db}</Project>
       <Name>Visitor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Construction\AbstractFactory\AbstractFactory.csproj">
+    <ProjectReference Include="..\Creational\AbstractFactory\AbstractFactory.csproj">
       <Project>{31b499c2-d21c-49e0-a2c0-2942229307e5}</Project>
       <Name>AbstractFactory</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Construction\Builder\Builder.csproj">
+    <ProjectReference Include="..\Creational\Builder\Builder.csproj">
       <Project>{cc230caa-e1d2-4a94-9331-b46202857fca}</Project>
       <Name>Builder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Construction\FactoryMethod\FactoryMethod.csproj">
+    <ProjectReference Include="..\Creational\FactoryMethod\FactoryMethod.csproj">
       <Project>{1f4d940e-8057-41c3-a86f-06b85145f7c7}</Project>
       <Name>FactoryMethod</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Construction\Prototype\Prototype.csproj">
+    <ProjectReference Include="..\Creational\Prototype\Prototype.csproj">
       <Project>{bf14b17c-7fb9-4750-b968-96ea5922f8e5}</Project>
       <Name>Prototype</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Construction\Singleton\Singleton.csproj">
+    <ProjectReference Include="..\Creational\Singleton\Singleton.csproj">
       <Project>{450b1992-edd2-4d87-bb7d-ab2706339e7e}</Project>
       <Name>Singleton</Name>
     </ProjectReference>

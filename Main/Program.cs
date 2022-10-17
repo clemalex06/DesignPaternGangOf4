@@ -190,7 +190,7 @@ namespace Main
                 2,
                 new DesignPatternType
                 {
-                    Name = "Construction",
+                    Name = "Creational",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {
