@@ -30,7 +30,6 @@ Allows objects with incompatible interfaces to collaborate.
 ### Bridge's Concept :
 Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 
-
 ### Composite's Concept :
 Lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
@@ -47,19 +46,11 @@ Lets you fit more objects into the available amount of RAM by sharing common par
 ### Proxy's Concept :
 Lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
 
-Comportement
-    ChainOfResponsability
+## Behavioral Design Patterns
+[Behavioral Design Patterns from Reafctoring Guru](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-    /*
-     *
-     * Concept de la ChainOfResponsability
-     *  crée une chaine d'objet telle que si un objet de la chaine
-     *  ne peut pas répondre à une requête, il puisse la transmettre à ses
-     *  successeurs jusqu'à ce que l'un d'entre eux y réponde
-     * 
-     */
-
-    Command
+### Chain of Responsibility's Concept :
+Lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
         /*
          *

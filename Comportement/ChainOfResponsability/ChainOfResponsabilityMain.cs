@@ -3,42 +3,38 @@
 namespace ChainOfResponsability
 {
     /*
-     *
-     * Concept de la ChainOfResponsability
-     *  crée une chaine d'objet telle que si un objet de la chaine
-     *  ne peut pas répondre à une requête, il puisse la transmettre à ses
-     *  successeurs jusqu'à ce que l'un d'entre eux y réponde
-     * 
+     * Chain of Responsibility's Concept :
+     * lets you pass requests along a chain of handlers. 
+     * Upon receiving a request, each handler decides 
+     * either to process the request or to pass it to the next handler in the chain.
      */
     public static class ChainOfResponsabilityMain
     {
         public static void Main()
         {
-            ObjetBase vehicule1 = new Vehicule("Auto++ KT500 Véhicule en bon" +
-                "etat");
+            BaseObject car1 = new Car("Car++ KT500, car in good condition");
 
-            Console.WriteLine(vehicule1.donneDescription());
+            Console.WriteLine(car1.Describe());
 
-            var model1 = new Modele("KT400", "Vehicule Spacieux et Confortable");
+            var model1 = new CarModel("KT400", "a spacious and comfortable model");
 
-            var vehicule2 = new Vehicule(null);
-            vehicule2.suivant = model1;
+            var car2 = new Car(null);
+            car2.Next = model1;
 
-            Console.WriteLine(vehicule2.donneDescription());
+            Console.WriteLine(car2.Describe());
 
-            var marque1 = new Marque("Auto++", "La marque des autos",
-                "de gande qualite");
+            var brand1 = new CarBrand("Auto++", "The best car brand", "high quality");
 
-            var modele2 = new Modele("KT700", null);
-            modele2.suivant = marque1;
+            var model2 = new CarModel("KT700", null);
+            model2.Next = brand1;
 
-            var vehicule3 = new Vehicule(null);
-            vehicule3.suivant = modele2;
+            var car3 = new Car(null);
+            car3.Next = model2;
 
-            Console.WriteLine(vehicule3.donneDescription());
+            Console.WriteLine(car3.Describe());
 
-            var vehicule4 = new Vehicule(null);
-            Console.WriteLine(vehicule4.donneDescription());
+            var vehicule4 = new Car(null);
+            Console.WriteLine(vehicule4.Describe());
         }
     }
 }
