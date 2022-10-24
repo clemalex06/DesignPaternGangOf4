@@ -92,7 +92,7 @@ namespace Main
                 1,
                 new DesignPatternType
                 {
-                    Name = "Comportement",
+                    Name = "Behavioral",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {
