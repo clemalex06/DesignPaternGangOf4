@@ -36,16 +36,9 @@ Lets you compose objects into tree structures and then work with these structure
 ### Decorator's Concept :
 Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
-    Facade
 
-    /*
-     *
-     *Concept de la Facade
-     * a pour but de regrouper les interfaces d'un ensemble
-     * d'objets en une interface unifiée rendant cet ensemble plus simple
-     * à utiliser
-     * 
-     */
+### Facade's Concept :
+Provides a simplified interface to a library, a framework, or any other complex set of classes.
 
     FlighWeight
 

@@ -1,10 +1,10 @@
 ﻿using System;
 namespace Facade
 {
-    public class ComposantGestionDocument:GestionDocument
+    public class DocumentManagementComponent : IDocumentManagement
     {
 
-        public string document(int index)
+        public string Document(int index)
         {
             return $"Document numero {index}";
         }

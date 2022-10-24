@@ -8,11 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structuration", "Structurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comportement", "Comportement", "{7B60E35C-8C65-4B23-B4EC-34F76BFD79C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A24CFC81-0E9D-49E4-8C00-197ECBA077DC}"
-	ProjectSection(SolutionItems) = preProject
-		ListDesignPattern.txt = ListDesignPattern.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Creational\AbstractFactory\AbstractFactory.csproj", "{31B499C2-D21C-49E0-A2C0-2942229307E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Creational\Builder\Builder.csproj", "{CC230CAA-E1D2-4A94-9331-B46202857FCA}"

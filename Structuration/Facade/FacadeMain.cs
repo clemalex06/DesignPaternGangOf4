@@ -1,31 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Facade
 {
     /*
-     *
-     *Concept de la Facade
-     * a pour but de regrouper les interfaces d'un ensemble
-     * d'objets en une interface unifiée rendant cet ensemble plus simple
-     * à utiliser
-     * 
+     * Facade's Concept :
+     * Provides a simplified interface to a library, 
+     * a framework, or any other complex set of classes.
      */
     public static class FacadeMain
     {
         public static void Main()
         {
-            var webServiceAuto = new WebServiceAutoImpl();
+            var carWebService = new CarWebService();
 
-            Console.WriteLine(webServiceAuto.document(0));
-            Console.WriteLine(webServiceAuto.document(1));
-            var resultats = webServiceAuto.chercheVehicules(
+            Console.WriteLine(carWebService.Document(0));
+            Console.WriteLine(carWebService.Document(1));
+            var results = carWebService.SearchCars(
                 6000, 1000);
-            if (resultats.Count > 0)
+            if (results.Count > 0)
             {
-                Console.WriteLine("Vehicules dont le prix est compris" +
-                    "entre 5000 et 7000");
-                foreach (var result in resultats)
+                Console.WriteLine("Cars where price is between 5000 and 7000 euros");
+                foreach (var result in results)
                     Console.WriteLine(result);
             }
         }
