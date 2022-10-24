@@ -3,20 +3,18 @@
 namespace Proxy
 {
     /*
-     *
-     * Concept du PROXY
-     * construit un objet qui se substitue à unautre objet et
-     * qui controle son acces
-     * 
+     * Proxy's Concept :
+     * lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, 
+     * allowing you to perform something either before or after the request gets through to the original object.
      */
     public static class ProxyMain
     {
         public static void Main()
         {
-            var animation = new AnimationProxy();
-            animation.dessine();
-            animation.clic();
-            animation.dessine();
+            var animationMovie = new AnimationProxy();
+            animationMovie.Draw();
+            animationMovie.Click();
+            animationMovie.Draw();
         }
     }
 }

@@ -1,32 +1,32 @@
 ﻿using System;
 namespace Proxy
 {
-    public class AnimationProxy:Animation
+    public class AnimationProxy : IAnimationMovie
     {
-        protected Film film = null;
-        protected string photo = "affichage de la photo";
+        protected AnimationMovie Movie = null;
+        protected string Photo = "Display the photo";
 
-        public void clic()
+        public void Click()
         {
-            if (film == null)
+            if (Movie == null)
             {
-                film = new Film();
-                film.charge();
+                Movie = new AnimationMovie();
+                Movie.Load();
             }
-            film.joue();
+            Movie.Play();
         }
 
-        public void dessine()
+        public void Draw()
         {
-            if (film != null)
+            if (Movie != null)
             {
-                film.dessine();
+                Movie.Draw();
             }
             else
-                dessine(photo);
+                Draw(Photo);
         }
 
-        public void dessine(string photo)
+        public void Draw(string photo)
         {
             Console.WriteLine(photo);
         }

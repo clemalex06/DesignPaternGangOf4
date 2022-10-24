@@ -44,15 +44,8 @@ Provides a simplified interface to a library, a framework, or any other complex 
 ### FlighWeight's Concept :
 Lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
 
-    Proxy
-
-    /*
-     *
-     * Concept du PROXY
-     * construit un objet qui se substitue à unautre objet et
-     * qui controle son acces
-     * 
-     */
+### Proxy's Concept :
+Lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
 
 Comportement
     ChainOfResponsability
