@@ -4,7 +4,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{A42DB105-E97C-4E57-A31E-1C1FED6406D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structuration", "Structuration", "{5B7784FE-A676-447E-B0C9-94449C75E8D2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{5B7784FE-A676-447E-B0C9-94449C75E8D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comportement", "Comportement", "{7B60E35C-8C65-4B23-B4EC-34F76BFD79C6}"
 EndProject
@@ -18,19 +18,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Creational\Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Creational\Singleton\Singleton.csproj", "{450B1992-EDD2-4D87-BB7D-AB2706339E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structuration\Adapter\Adapter.csproj", "{7E5BB804-6296-4F0C-9420-C08969F8580F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structural\Adapter\Adapter.csproj", "{7E5BB804-6296-4F0C-9420-C08969F8580F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Structuration\Bridge\Bridge.csproj", "{77AAFBD7-1E5D-4E03-82BA-4558BAED47CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Structural\Bridge\Bridge.csproj", "{77AAFBD7-1E5D-4E03-82BA-4558BAED47CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Structuration\Composite\Composite.csproj", "{8AD980BF-759E-48FD-BF1D-A2D9FEBE188F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Structural\Composite\Composite.csproj", "{8AD980BF-759E-48FD-BF1D-A2D9FEBE188F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Structuration\Decorator\Decorator.csproj", "{5D7A0830-65DA-4E28-945B-AF038960192A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Structural\Decorator\Decorator.csproj", "{5D7A0830-65DA-4E28-945B-AF038960192A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Structuration\Facade\Facade.csproj", "{FD54C32B-36B3-4690-942D-D86B522E431C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Structural\Facade\Facade.csproj", "{FD54C32B-36B3-4690-942D-D86B522E431C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlighWeight", "Structuration\FlighWeight\FlighWeight.csproj", "{9AB808CC-877E-4721-859B-55BD08747B3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlighWeight", "Structural\FlighWeight\FlighWeight.csproj", "{9AB808CC-877E-4721-859B-55BD08747B3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structuration\Proxy\Proxy.csproj", "{4B0738EF-205D-48EA-AFDF-7647541AE107}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Structural\Proxy\Proxy.csproj", "{4B0738EF-205D-48EA-AFDF-7647541AE107}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsability", "Comportement\ChainOfResponsability\ChainOfResponsability.csproj", "{9030F4B0-9A43-428A-AEAB-FEC36B4502D6}"
 EndProject

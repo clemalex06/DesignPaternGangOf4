@@ -274,7 +274,7 @@ namespace Main
                 4,
                 new DesignPatternType
                 {
-                    Name = "Structuration",
+                    Name = "Structural",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {

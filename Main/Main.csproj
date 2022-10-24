@@ -128,31 +128,31 @@
       <Project>{bc28eaf4-7573-43ac-a647-386883cc1879}</Project>
       <Name>ReflectiveVisitor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Adapter\Adapter.csproj">
+    <ProjectReference Include="..\Structural\Adapter\Adapter.csproj">
       <Project>{7e5bb804-6296-4f0c-9420-c08969f8580f}</Project>
       <Name>Adapter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Bridge\Bridge.csproj">
+    <ProjectReference Include="..\Structural\Bridge\Bridge.csproj">
       <Project>{77aafbd7-1e5d-4e03-82ba-4558baed47cd}</Project>
       <Name>Bridge</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Composite\Composite.csproj">
+    <ProjectReference Include="..\Structural\Composite\Composite.csproj">
       <Project>{8ad980bf-759e-48fd-bf1d-a2d9febe188f}</Project>
       <Name>Composite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Decorator\Decorator.csproj">
+    <ProjectReference Include="..\Structural\Decorator\Decorator.csproj">
       <Project>{5d7a0830-65da-4e28-945b-af038960192a}</Project>
       <Name>Decorator</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Facade\Facade.csproj">
+    <ProjectReference Include="..\Structural\Facade\Facade.csproj">
       <Project>{fd54c32b-36b3-4690-942d-d86b522e431c}</Project>
       <Name>Facade</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\FlighWeight\FlighWeight.csproj">
+    <ProjectReference Include="..\Structural\FlighWeight\FlighWeight.csproj">
       <Project>{9ab808cc-877e-4721-859b-55bd08747b3c}</Project>
       <Name>FlighWeight</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Structuration\Proxy\Proxy.csproj">
+    <ProjectReference Include="..\Structural\Proxy\Proxy.csproj">
       <Project>{4b0738ef-205d-48ea-afdf-7647541ae107}</Project>
       <Name>Proxy</Name>
     </ProjectReference>
