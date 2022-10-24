@@ -34,9 +34,9 @@
   <ItemGroup>
     <Compile Include="FlighWeightMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OptionVehicule.cs" />
-    <Compile Include="FabriqueOption.cs" />
-    <Compile Include="VehiculeCommande.cs" />
+    <Compile Include="CarOption.cs" />
+    <Compile Include="OptionsFactory.cs" />
+    <Compile Include="CarOrder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

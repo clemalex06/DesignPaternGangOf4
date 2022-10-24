@@ -21,7 +21,8 @@ Creates duplicate object while keeping performance in mind. This type of design 
 ### Singleton's Concept :
 Restricts the instantiation of a class to one "single" instance.
 
-## Structuration Design Patterns 
+## Structural Design Patterns
+[Structural Design Patterns from Reafctoring Guru](https://refactoring.guru/design-patterns/structural-patterns)
 
 ### Adapter's Concept : 
 Allows objects with incompatible interfaces to collaborate.
@@ -40,15 +41,8 @@ Lets you attach new behaviors to objects by placing these objects inside special
 ### Facade's Concept :
 Provides a simplified interface to a library, a framework, or any other complex set of classes.
 
-    FlighWeight
-
-    /*
-     *
-     *Concept du FlyWeight
-     * facilite le partage d'un ensemble importants
-     * d'objets dont le grain est fin
-     * 
-     */
+### FlighWeight's Concept :
+Lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
 
     Proxy
 
