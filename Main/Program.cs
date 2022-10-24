@@ -92,7 +92,7 @@ namespace Main
                 1,
                 new DesignPatternType
                 {
-                    Name = "Comportement",
+                    Name = "Behavioral",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {
@@ -190,7 +190,7 @@ namespace Main
                 2,
                 new DesignPatternType
                 {
-                    Name = "Construction",
+                    Name = "Creational",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {
@@ -274,7 +274,7 @@ namespace Main
                 4,
                 new DesignPatternType
                 {
-                    Name = "Structuration",
+                    Name = "Structural",
                     DesignPatterns = new Dictionary<int, DesignPattern>
                     {
                         {
