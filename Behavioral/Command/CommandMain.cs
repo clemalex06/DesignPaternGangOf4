@@ -1,55 +1,50 @@
 ﻿using System;
-
 namespace Command
 {
     public class CommandMain
     {
-
         /*
-         *
-         *Concept du Command
-         * a pour objectif de transformer une requête en un objet
-         * facilitant des opérattions comme l'annulation, la mise en file des
-         * requêtes et leur suivi
-         * 
+         * Command's Concept :
+         * Turns a request into a stand-alone object that contains all information about the request. 
+         * This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, 
+         * and support undoable operations.
          */
         public static void Main()
         {
-            var vehicule1 = new Vehicule("A01", 1, 1000);
-            var vehicule2 = new Vehicule("A02", 6, 2000);
-            var vehicule3 = new Vehicule("A03", 2, 3000);
+            var today = DateTime.SpecifyKind(DateTime.Today, DateTimeKind.Utc);
+            var car1 = new Car("A01", today.AddDays(-1), 1000);
+            var car2 = new Car("A02", today.AddDays(-6), 2000);
+            var car3 = new Car("A03", today.AddDays(-3), 3000);
 
-            var catalogue = new Catalogue();
-            catalogue.ajoute(vehicule1);
-            catalogue.ajoute(vehicule2);
-            catalogue.ajoute(vehicule3);
+            var catalog = new Catalog();
+            catalog.Add(car1);
+            catalog.Add(car2);
+            catalog.Add(car3);
 
-            Console.WriteLine("Affichage du catalogue initial");
-            catalogue.affiche();
+            Console.WriteLine("Display Initial Catalog");
+            catalog.Display();
             Console.WriteLine();
 
-            var commandeSolder = new CommandSolder(10, 5, 0.1);
-            catalogue.lanceCommandeSolder(commandeSolder);
-            Console.WriteLine("Affichage du catalogue apres execution de la " +
-                "premiere commande");
-            catalogue.affiche();
+            var discountedCommand1 = new DiscountedCommand(today, 5, 0.1, "First");
+            discountedCommand1.Display();
+            catalog.LaunchDiscountedCommand(discountedCommand1);
+            Console.WriteLine("Display Catalog After First Discounted Command");
+            catalog.Display();
             Console.WriteLine();
-            var commandeSoler2 = new CommandSolder(10, 5, 0.5);
-            catalogue.lanceCommandeSolder(commandeSoler2);
+            var discountedCommand2 = new DiscountedCommand(today, 2, 0.5, "Second");
+            discountedCommand2.Display();
+            catalog.LaunchDiscountedCommand(discountedCommand2);
 
-            Console.WriteLine("Affichage du catalogue apres execution de la " +
-            "seconde commande");
-            catalogue.affiche();
+            Console.WriteLine("Display Catalog After Second Discounted Command");
+            catalog.Display();
             Console.WriteLine();
-            catalogue.annuleCommandeSolder(1);
-            Console.WriteLine("Affichage du catalogue apres annulation de la " +
-                "premiere commande");
-            catalogue.affiche();
+            catalog.CancelDiscountedCommand(1);
+            Console.WriteLine("Display Catalog After First Discounted Command Cancellation");
+            catalog.Display();
             Console.WriteLine();
-            catalogue.retablitCommandeSolder(1);
-            Console.WriteLine("Affichage du catalogue apres execution de la " +
-                "premiere commande");
-            catalogue.affiche();
+            catalog.RestoreDiscountedCommand(1);
+            Console.WriteLine("Display Catalog After First Discounted Command Restoration");
+            catalog.Display();
             Console.WriteLine();
 
 

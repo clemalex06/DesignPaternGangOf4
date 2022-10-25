@@ -52,20 +52,14 @@ Lets you provide a substitute or placeholder for another object. A proxy control
 ### Chain of Responsibility's Concept :
 Lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
-        /*
-         *
-         *Concept du Command
-         * a pour objectif de transformer une requête en un objet
-         * facilitant des opérattions comme l'annulation, la mise en file des
-         * requêtes et leur suivi
-         * 
-         */
-
-    Interpreter
+### Command's Concept :
+Turns a request into a stand-alone object that contains all information about the request. 
+This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+   
 
         /*
          *
-         * Concept de l'interpreter
+         * Concept de l'Interpreter
          * fournit un cadre pour donner une représentation par objets de la
          * grammaire d'un langage afin d'évaluer, en les intérprétant,
          * des expressions écrites dans ce langage
