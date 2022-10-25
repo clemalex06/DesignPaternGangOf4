@@ -21,7 +21,7 @@ namespace Interpreter
             Expression leftResult, rightResult;
             leftResult = Expression.Parse();
 
-            while ((Token != null) && (Token == "And"))
+            while ((Token != null) && (Token == "And" || Token == "&&" || Token == "and"))
             {
                 NextToken();
                 rightResult = Expression.Parse();

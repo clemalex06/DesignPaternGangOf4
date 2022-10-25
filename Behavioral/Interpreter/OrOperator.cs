@@ -19,7 +19,7 @@
         {
             Expression leftResult, rightResult;
             leftResult = AndOperator.Parse();
-            while ((Token != null) && (Token == "Or"))
+            while ((Token != null) && (Token == "Or" || Token == "||" || Token == "or"))
             {
                 NextToken();
                 rightResult = AndOperator.Parse();
