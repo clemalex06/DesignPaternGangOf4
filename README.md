@@ -55,22 +55,14 @@ Lets you pass requests along a chain of handlers. Upon receiving a request, each
 ### Command's Concept :
 Turns a request into a stand-alone object that contains all information about the request. 
 This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
-   
 
-        /*
-         *
-         * Concept de l'Interpreter
-         * fournit un cadre pour donner une représentation par objets de la
-         * grammaire d'un langage afin d'évaluer, en les intérprétant,
-         * des expressions écrites dans ce langage
-         * 
-         */
-
-    Iterator
+### Interpreter's Concept :	 
+Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
 
     /*
      * 
-     * Concept de l'iterator
+     * Concept de l'Iterator
      * fournit u accès séquentiel à une collection d'objets
      * sans que les clients se préoccupent de l'implémentation de cette collection
      * 

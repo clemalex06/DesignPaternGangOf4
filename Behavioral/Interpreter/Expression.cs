@@ -3,63 +3,63 @@ namespace Interpreter
 {
     public abstract class Expression
     {
-        public abstract bool evalue(string description);
+        public abstract bool Evaluate(string description);
 
         //partie analyse syntaxique
-        protected static string source;
-        protected static int index;
-        protected static string jeton;
+        protected static string Source;
+        protected static int Index;
+        protected static string Token;
 
-        protected static void prochainJeton()
+        protected static void NextToken()
         {
-            while ((index < source.Length)
-                && (source[index] == ' '))
-                index++;
-            if (index == source.Length)
-                jeton = null;
-            else if ((source[index]=='(')||(source[index] == ')'))
+            while ((Index < Source.Length)
+                && (Source[Index] == ' '))
+                Index++;
+            if (Index == Source.Length)
+                Token = null;
+            else if ((Source[Index] == '(') || (Source[Index] == ')'))
             {
-                jeton = source.Substring(index, 1);
-                index++;
+                Token = Source.Substring(Index, 1);
+                Index++;
             }
             else
             {
-                int debut = index;
-                while((index<source.Length) && (source[index] !=' ')
-                    && (source[index]!=')'))
+                int start = Index;
+                while ((Index < Source.Length) && (Source[Index] != ' ')
+                    && (Source[Index] != ')'))
                 {
-                    index++;
+                    Index++;
                 }
-                jeton = source.Substring(debut, index - debut);
+                Token = Source.Substring(start, Index - start);
             }
         }
 
-        public static Expression analyse(string source)
+        public static Expression Analyse(string source)
         {
-            Expression.source = source;
-            index = 0;
-            prochainJeton();
-            return OperateurOu.parse();
+            Source = source;
+            Index = 0;
+            NextToken();
+            return OrOperator.Parse();
         }
 
-        public static Expression parse()
+        public static Expression Parse()
         {
-            Expression resultat;
-            if (jeton == "(")
+            Expression result;
+            if (Token == "(")
             {
-                prochainJeton();
-                resultat = OperateurOu.parse();
-                if (jeton == null)
-                    throw new Exception("Erreur de syntaxe");
-                if (jeton != ")")
-                    throw new Exception("Erreur de syntaxe");
-                prochainJeton();
+                NextToken();
+                result = OrOperator.Parse();
+                if (Token == null)
+                    throw new Exception("Synthactic Error");
+                if (Token != ")")
+                    throw new Exception("Synthactic Error");
+                NextToken();
             }
             else
             {
-                resultat = MotCle.parse();
+                result = KeyWord.Parse();
             }
-            return resultat;
+            return result;
         }
     }
 }

@@ -3,40 +3,37 @@
 namespace Interpreter
 {
     /*
-     * * Concept de l'interpreter
-     * * fournit un cadre pour donner une représentation par objets de la
-     * * grammaire d'un langage afin d'évaluer, en les intérprétant,
-     * * des expressions écrites dans ce langage
-     * 
+     * Interpreter's Concept :
+     * Given a language, define a representation for its grammar along with an interpreter 
+     * that uses the representation to interpret sentences in the language.
+     * Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
      */
     public static class InterpreterMain
     {
         public static void Main()
         {
-            Expression expressionRequete = null;
-            Console.WriteLine("Entrez votre requete");
-            string requete = Console.ReadLine();
+            Console.WriteLine("Write your request");
+            string request = Console.ReadLine();
 
+            Expression expression;
             try
             {
-                expressionRequete = Expression.analyse(requete);
+                expression = Expression.Analyse(request);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e);
-                expressionRequete = null;
+                expression = null;
             }
 
-            if (requete != null)
+            if (expression != null)
             {
-                Console.WriteLine(
-                    "Entrez le texte de description d'un vehicule");
+                Console.WriteLine("Write the texte to describe a car");
                 string description = Console.ReadLine();
-                if (expressionRequete.evalue(description))
-                    Console.WriteLine(" la description repond a la requete");
+                if (expression.Evaluate(description))
+                    Console.WriteLine("The description ANSWERS to the request");
                 else
-                    Console.WriteLine("La desription ne " +
-                        "repond pas a la requete");
+                    Console.WriteLine("The description DOESN'T ANSWERS to the request");
             }
         }
     }
