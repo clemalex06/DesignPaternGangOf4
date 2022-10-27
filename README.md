@@ -60,15 +60,8 @@ This transformation lets you pass requests as a method arguments, delay or queue
 Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
 
-    /*
-     * 
-     * Concept de l'Iterator
-     * fournit u accès séquentiel à une collection d'objets
-     * sans que les clients se préoccupent de l'implémentation de cette collection
-     * 
-     */
-
-    Mediator
+### Iterator's Concept :	 
+Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
     /*
      *
