@@ -66,14 +66,9 @@ Map a domain to a language, the language to a grammar, and the grammar to a hier
 ### Iterator's Concept :	 
 Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
-    /*
-     *
-     * Concept du Mediator
-     * construit un objet dont la vocation est la gestion
-     * et le controle des interactions au sein d'un ensemble d'objets sans
-     * que ces éléments se connaissent mutuellement
-     * 
-     */
+### Mediator's Concept :
+Lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+
 
     Memento
 
