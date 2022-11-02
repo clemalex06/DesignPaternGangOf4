@@ -3,6 +3,9 @@ C# command line solution to implement the basics design Patterns of Gang Of 4.
 To know more about the topic, check this link : 
 [refactoring guru design patterns](https://refactoring.guru/design-patterns)
 
+Another interesting link about SOLID Principles
+[SOLID Principles](https://www.baeldung.com/solid-principles)
+
 ## Creational Design Patterns
 [Creational Design Patterns from Reafctoring Guru](https://refactoring.guru/design-patterns/creational-patterns)
 
