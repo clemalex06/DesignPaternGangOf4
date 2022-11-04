@@ -72,7 +72,8 @@ Lets you reduce chaotic dependencies between objects. The pattern restricts dire
 ### Memento's Concept :
 Lets you save and restore the previous state of an object without revealing the details of its implementation.
 
-    Observer
+### Observer's Concept :
+Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
     /*
      *

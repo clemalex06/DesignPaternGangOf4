@@ -1,12 +1,11 @@
-﻿using System;
-namespace Observer
+﻿namespace Observer
 {
-    public class Vehicule:Sujet
+    public class Car : ObserversBase
     {
         protected string _description;
-        protected double _prix;
+        protected double _price;
 
-        public string description
+        public string Description
         {
             get
             {
@@ -15,20 +14,20 @@ namespace Observer
             set
             {
                 _description = value;
-                this.notifie();
+                Notify();
             }
         }
 
-        public double prix
+        public double Price
         {
             get
             {
-                return _prix;
+                return _price;
             }
             set
             {
-                _prix = value;
-                this.notifie();
+                _price = value;
+                Notify();
             }
         }
     }
