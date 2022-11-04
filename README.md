@@ -69,15 +69,8 @@ Lets you traverse elements of a collection without exposing its underlying repre
 ### Mediator's Concept :
 Lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
-
-    Memento
-
-    /*
-     *
-     * Concept du memento :
-     * sauvegarde et restaure l'etat d'un objet
-     * 
-     */
+### Memento's Concept :
+Lets you save and restore the previous state of an object without revealing the details of its implementation.
 
     Observer
 
