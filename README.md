@@ -75,24 +75,8 @@ Lets you save and restore the previous state of an object without revealing the 
 ### Observer's Concept :
 Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
-    /*
-     *
-     * Concept de l'adapter
-     * construit une dépdendance entre un sujet et des observateurs de façon à ce que
-     * chaque modification du sujet soit notifiée aux observateurs
-     * afin qu'ils puissent mettre à jour leurs état
-     * 
-     */
-
-    State
-
-    /*
-     *
-     * Concept du State
-     * permet a un objet d'adapter son comportement en fonction de son etat
-     * interne
-     * 
-     */
+### State's Concept :
+Lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 
     Strategy
 
