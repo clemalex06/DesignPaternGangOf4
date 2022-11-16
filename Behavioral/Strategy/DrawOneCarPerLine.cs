@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace Strategy
 {
-    public class DessinUnVehiculeLigne : DessinCatalogue
+    public class DrawOneCarPerLine : ICatalogDraw
     {
-        public void dessine(IList<VueVehicule> contenu)
+        public void Draw(IList<CarView> contenu)
         {
-            Console.WriteLine("Dessine les vehicules avec un vehicule par ligne");
+            Console.WriteLine("Will draw the cars with one car per line");
 
             foreach(var v in contenu)
             {
-                v.dessine();
+                v.Draw();
                 Console.WriteLine();
             }
             Console.WriteLine();

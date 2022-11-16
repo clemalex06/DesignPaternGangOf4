@@ -78,15 +78,9 @@ Lets you define a subscription mechanism to notify multiple objects about any ev
 ### State's Concept :
 Lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 
-    Strategy
 
-    /*
-     *
-     * Concept du Strategy
-     * adatpte le comportement et les algorithmes d'un objet en fonction
-     * d'un besoin sans changer les interactions avec le client de cet objet
-     * 
-     */
+### Strategy's Concept :
+Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
     TemplateMethod
 
