@@ -82,16 +82,8 @@ Lets an object alter its behavior when its internal state changes. It appears as
 ### Strategy's Concept :
 Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
-    TemplateMethod
-
-    /*
-     *
-     * Concept du template Method
-     * Permet de reporter dans des sous-classes certaines étapes de l'une
-     * des opérations d'un objet, ces étapes étant alors décrites dans
-     * les sous classes
-     * 
-     */
+### TemplateMethod's Concept :
+Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
     Visitor
 

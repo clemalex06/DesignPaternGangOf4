@@ -1,28 +1,24 @@
-﻿using System;
-
-namespace TemplateMethod
+﻿namespace TemplateMethod
 {
     /*
-     *
-     * Concept du template Method
-     * Permet de reporter dans des sous-classes certaines étapes de l'une
-     * des opérations d'un objet, ces étapes étant alors décrites dans
-     * les sous classes
-     * 
+     * ### TemplateMethod's Concept :
+     * Defines the skeleton of an algorithm in the superclass
+     * but lets subclasses override specific steps of the algorithm without changing its structure.
      */
     public static class TemplateMethodMain
     {
         public static void Main()
         {
-            var commandeFrance = new CommandeFrance();
-            commandeFrance.setMontantHt(10000);
-            commandeFrance.calculeMontantTtc();
-            commandeFrance.affiche();
+            var initialPrice = 10000;
+            var commandeFrance = new FrenchPrice();
+            commandeFrance.SetInitialPrice(initialPrice);
+            commandeFrance.ComputePriceWithTax();
+            commandeFrance.Display();
 
-            var commandeLuxembourg = new CommandeLuxembourg();
-            commandeLuxembourg.setMontantHt(10000);
-            commandeLuxembourg.calculeMontantTtc();
-            commandeLuxembourg.affiche();
+            var commandeLuxembourg = new SpanishPrice();
+            commandeLuxembourg.SetInitialPrice(initialPrice);
+            commandeLuxembourg.ComputePriceWithTax();
+            commandeLuxembourg.Display();
         }
     }
 }
