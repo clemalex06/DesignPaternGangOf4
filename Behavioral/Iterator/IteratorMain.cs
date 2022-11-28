@@ -1,28 +1,24 @@
-﻿using System;
-
-namespace Iterator
+﻿namespace Iterator
 {
     /*
-     * 
-     * Concept de l'iterator
-     * fournit u accès séquentiel à une collection d'objets
-     * sans que les clients se préoccupent de l'implémentation de cette collection
-     * 
+     * Iterator's Concept :	 
+     * Lets you traverse elements of a collection 
+     * without exposing its underlying representation (list, stack, tree, etc.).
      */
     public static class IteratorMain
     {
         public static void Main()
         {
-            var catalogue = new CatalogueVehicule();
-            var iterateur =catalogue.recherche("bon marche");
-            Vehicule vehicule;
-            iterateur.debut();
-            vehicule = iterateur.item();
-            while (vehicule != null)
+            var catalog = new CarCatalog();
+            var iterator = catalog.Search("cheap");
+            Car car;
+            iterator.Start();
+            car = iterator.Item();
+            while (car != null)
             {
-                vehicule.affiche();
-                iterateur.suivant();
-                vehicule = iterateur.item();
+                car.Display();
+                iterator.Next();
+                car = iterator.Item();
             }
         }
     }

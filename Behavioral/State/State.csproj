@@ -34,12 +34,12 @@
   <ItemGroup>
     <Compile Include="StateMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commande.cs" />
-    <Compile Include="EtatCommande.cs" />
-    <Compile Include="Produit.cs" />
-    <Compile Include="CommandeEnCours.cs" />
-    <Compile Include="CommandeValidee.cs" />
-    <Compile Include="CommandeLivree.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderState.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="OrderInProgress.cs" />
+    <Compile Include="OrderValidated.cs" />
+    <Compile Include="OrderDelivered.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

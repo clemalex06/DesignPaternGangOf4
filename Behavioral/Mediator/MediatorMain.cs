@@ -1,35 +1,31 @@
-﻿using System;
-
-namespace Mediator
+﻿namespace Mediator
 {
     /*
-     *
-     * Concept du Mediator
-     * construit un objet dont la vocation est la gestion
-     * et le controle des interactions au sein d'un ensemble d'objets sans
-     * que ces éléments se connaissent mutuellement
-     * 
+     * Mediator's Concept :
+     * Lets you reduce chaotic dependencies between objects. 
+     * The pattern restricts direct communications between the objects 
+     * and forces them to collaborate only via a mediator object.
      */
     public static class MediatorMain
     {
         public static void Main()
         {
-            var formulaire = new Formulaire();
-            formulaire.ajouteControle(new ZoneSaisie("Nom"));
-            formulaire.ajouteControle(new ZoneSaisie("Prenom"));
-            var menu = new PopupMenu("Coemprunteur");
-            menu.ajouteOption("sans coemprunteur");
-            menu.ajouteOption("avec coemprunteur");
-            formulaire.ajouteControle(menu);
-            formulaire.menuCoemprunteur = menu;
-            var bouton = new Bouton("OK");
-            formulaire.ajouteControle(bouton);
-            formulaire.boutonOk = bouton;
-            formulaire.ajouteControleCoemprunteur(
-                new ZoneSaisie("Nom du coemprunteur"));
-            formulaire.ajouteControleCoemprunteur(
-                new ZoneSaisie("Prenom du coemprunteur"));
-            formulaire.saisie();
+            var form = new Form();
+            form.AddBasicControl(new TextArea("First Name"));
+            form.AddBasicControl(new TextArea("Last Name"));
+            var menu = new PopupMenu("Additional Controls");
+            menu.AddOption("without Additional Controls");
+            menu.AddOption("with Additional Controls");
+            form.AddBasicControl(menu);
+            form.PopupMenu = menu;
+            var button = new Button("OK");
+            form.AddBasicControl(button);
+            form.OkButton = button;
+            form.AddAdditionalControls(
+                new TextArea("BirthDate"));
+            form.AddAdditionalControls(
+                new TextArea("BitrhPlace"));
+            form.Input();
 
         }
     }

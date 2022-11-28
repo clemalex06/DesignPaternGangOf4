@@ -3,31 +3,30 @@
 namespace Memento
 {
     /*
-     *
-     * Concept du memento :
-     * sauvegarde et restaure l'etat d'un objet
-     * 
+     * ### Memento's Concept :
+     * Lets you save and restore the previous state of an object 
+     * without revealing the details of its implementation.
      */
     public static class MementoMain
     {
         public static void Main()
         {
-            Memento memento;
-            var option1 = new OptionVehicule("Sieges en cuir");
-            var option2 = new OptionVehicule("Accoudoirs");
-            var option3 = new OptionVehicule("sieges sprotifs");
+            IMemento memento;
+            var item1 = new Item("kitchen knife");
+            var item2 = new Item("Fork");
+            var item3 = new Item("Swiss knife");
 
-            option1.ajoutOptionIncompatible(option3);
-            option2.ajoutOptionIncompatible(option3);
+            item1.AddIncompatibleItem(item3);
+            item2.AddIncompatibleItem(item3);
 
-            var chariotOptions = new ChariotOption();
-            chariotOptions.ajouteOption(option1);
-            chariotOptions.ajouteOption(option2);
-            chariotOptions.affiche();
-            memento = chariotOptions.ajouteOption(option3);
-            chariotOptions.affiche();
-            chariotOptions.annule(memento);
-            chariotOptions.affiche();
+            var itemsCart = new ItemsCart();
+            itemsCart.AddItem(item1);
+            itemsCart.AddItem(item2);
+            itemsCart.Display();
+            memento = itemsCart.AddItem(item3);
+            itemsCart.Display();
+            itemsCart.Cancel(memento);
+            itemsCart.Display();
         }
     }
 }

@@ -3,6 +3,9 @@ C# command line solution to implement the basics design Patterns of Gang Of 4.
 To know more about the topic, check this link : 
 [refactoring guru design patterns](https://refactoring.guru/design-patterns)
 
+Another interesting link about SOLID Principles
+[SOLID Principles](https://www.baeldung.com/solid-principles)
+
 ## Creational Design Patterns
 [Creational Design Patterns from Reafctoring Guru](https://refactoring.guru/design-patterns/creational-patterns)
 
@@ -52,110 +55,40 @@ Lets you provide a substitute or placeholder for another object. A proxy control
 ### Chain of Responsibility's Concept :
 Lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
-        /*
-         *
-         *Concept du Command
-         * a pour objectif de transformer une requête en un objet
-         * facilitant des opérattions comme l'annulation, la mise en file des
-         * requêtes et leur suivi
-         * 
-         */
+### Command's Concept :
+Turns a request into a stand-alone object that contains all information about the request. 
+This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
 
-    Interpreter
+### Interpreter's Concept :	 
+Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
 
-        /*
-         *
-         * Concept de l'interpreter
-         * fournit un cadre pour donner une représentation par objets de la
-         * grammaire d'un langage afin d'évaluer, en les intérprétant,
-         * des expressions écrites dans ce langage
-         * 
-         */
+### Iterator's Concept :	 
+Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
-    Iterator
+### Mediator's Concept :
+Lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
-    /*
-     * 
-     * Concept de l'iterator
-     * fournit u accès séquentiel à une collection d'objets
-     * sans que les clients se préoccupent de l'implémentation de cette collection
-     * 
-     */
+### Memento's Concept :
+Lets you save and restore the previous state of an object without revealing the details of its implementation.
 
-    Mediator
+### Observer's Concept :
+Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
-    /*
-     *
-     * Concept du Mediator
-     * construit un objet dont la vocation est la gestion
-     * et le controle des interactions au sein d'un ensemble d'objets sans
-     * que ces éléments se connaissent mutuellement
-     * 
-     */
+### State's Concept :
+Lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 
-    Memento
 
-    /*
-     *
-     * Concept du memento :
-     * sauvegarde et restaure l'etat d'un objet
-     * 
-     */
+### Strategy's Concept :
+Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
-    Observer
+### TemplateMethod's Concept :
+Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
-    /*
-     *
-     * Concept de l'adapter
-     * construit une dépdendance entre un sujet et des observateurs de façon à ce que
-     * chaque modification du sujet soit notifiée aux observateurs
-     * afin qu'ils puissent mettre à jour leurs état
-     * 
-     */
+### Visitor's Concept :
+Lets you separate algorithms from the objects on which they operate.
 
-    State
-
-    /*
-     *
-     * Concept du State
-     * permet a un objet d'adapter son comportement en fonction de son etat
-     * interne
-     * 
-     */
-
-    Strategy
-
-    /*
-     *
-     * Concept du Strategy
-     * adatpte le comportement et les algorithmes d'un objet en fonction
-     * d'un besoin sans changer les interactions avec le client de cet objet
-     * 
-     */
-
-    TemplateMethod
-
-    /*
-     *
-     * Concept du template Method
-     * Permet de reporter dans des sous-classes certaines étapes de l'une
-     * des opérations d'un objet, ces étapes étant alors décrites dans
-     * les sous classes
-     * 
-     */
-
-    Visitor
-
-    /*
-     *
-     *Concept du Visitor
-     * construit une opération à réaliser sur les éléments d'un ensemble
-     * d'objets. De nouvelles opérations peuvent ainsi être ajoutées
-     * sans modifier les classes de ces objets
-     * 
-     */
-
-Autres
+## Others Design Patterns
 
     Pluggable Factory
 

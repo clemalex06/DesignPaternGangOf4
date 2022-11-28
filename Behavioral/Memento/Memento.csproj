@@ -34,10 +34,10 @@
   <ItemGroup>
     <Compile Include="MementoMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IMemento.cs" />
     <Compile Include="Memento.cs" />
-    <Compile Include="MementoImpl.cs" />
-    <Compile Include="OptionVehicule.cs" />
-    <Compile Include="ChariotOption.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemsCart.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

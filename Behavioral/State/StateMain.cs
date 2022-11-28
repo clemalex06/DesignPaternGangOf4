@@ -1,36 +1,33 @@
 ﻿using System;
-
 namespace State
 {
     /*
-     *
-     * Concept du State
-     * permet a un objet d'adapter son comportement en fonction de son etat
-     * interne
-     * 
+     * ### State's Concept :
+     * Lets an object alter its behavior when its internal state changes.
+     * It appears as if the object changed its class.
      */
     public static class StateMain
     {
         public static void Main()
         {
-            var commande = new Commande();
-            commande.ajouteProduit(new Produit("Vehicule 1"));
-            commande.ajouteProduit(new Produit("Accessoire 2"));
-            commande.affiche();
-            commande.etatSuivant();
-            commande.ajouteProduit(new Produit("Accessoire 3"));
-            commande.efface();
-            commande.affiche();
+            var order = new Order("Order 1");
+            order.Add(new Product("Object 1"));
+            order.Add(new Product("Object 2"));
+            order.Display();
+            order.NextState();
+            order.Add(new Product("Object 3"));
+            order.Clear();
+            order.Display();
 
-            var commande2 = new Commande();
-            commande2.ajouteProduit(new Produit("Vehicule 11"));
-            commande2.ajouteProduit(new Produit("Accessoire 21"));
-            commande2.affiche();
-            commande2.etatSuivant();
-            commande2.affiche();
-            commande2.etatSuivant();
-            commande2.efface();
-            commande2.affiche();
+            var order2 = new Order("Order 2");
+            order2.Add(new Product("Object 11"));
+            order2.Add(new Product("Object 21"));
+            order2.Display();
+            order2.NextState();
+            order2.Display();
+            order2.NextState();
+            order2.Clear();
+            order2.Display();
 
 
 

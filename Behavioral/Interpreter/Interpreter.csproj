@@ -35,10 +35,10 @@
     <Compile Include="InterpreterMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Expression.cs" />
-    <Compile Include="MotCle.cs" />
-    <Compile Include="OperateurBinaire.cs" />
-    <Compile Include="OperateurOu.cs" />
-    <Compile Include="OperateurEt.cs" />
+    <Compile Include="KeyWord.cs" />
+    <Compile Include="BinaryOperator.cs" />
+    <Compile Include="OrOperator.cs" />
+    <Compile Include="AndOperator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

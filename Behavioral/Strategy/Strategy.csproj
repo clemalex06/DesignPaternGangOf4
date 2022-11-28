@@ -34,11 +34,11 @@
   <ItemGroup>
     <Compile Include="StrategyMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DessinCatalogue.cs" />
-    <Compile Include="VueVehicule.cs" />
-    <Compile Include="DessinUnVehiculeLigne.cs" />
-    <Compile Include="DessinTroisVehiculeLigne.cs" />
-    <Compile Include="VueCatalogue.cs" />
+    <Compile Include="ICatalogDraw.cs" />
+    <Compile Include="CarView.cs" />
+    <Compile Include="DrawOneCarPerLine.cs" />
+    <Compile Include="DrawThreeCarsPerLine.cs" />
+    <Compile Include="CatalogView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

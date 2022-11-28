@@ -1,36 +1,30 @@
-﻿using System;
-
-namespace Visitor
+﻿namespace Visitor
 {
     /*
-     *
-     *Concept du Visitor
-     * construit une opération à réaliser sur les éléments d'un ensemble
-     * d'objets. De nouvelles opérations peuvent ainsi être ajoutées
-     * sans modifier les classes de ces objets
-     * 
+     * ### Visitor's Concept :
+     * Lets you separate algorithms from the objects on which they operate.
      */
     public static class VisitorMain
     {
         public static void Main()
         {
-            var societe1 = new SocieteSansFiliale("societe1",
-                "info@societe1.com", "rue de la societe1");
-            var societe2 = new SocieteSansFiliale("societe2",
-                "info@societe2.com", "rue de la societe2");
-            var societe3 = new SocieteSansFiliale("societe3",
-                "info@societe3.com", "rue de la societe3");
+            var company1 = new SubsidiaryLessCompany("company1",
+                "info@company1.com", "company1 street");
+            var company2 = new SubsidiaryLessCompany("company2",
+                "info@company2.com", "company2 street");
+            var company3 = new SubsidiaryLessCompany("company3",
+                "info@company3.com", "company3 street");
 
-            var groupe1 = new SocieteMere("groupe1", "info@group1.com",
-                "rue du groupe1");
-            var groupe2 = new SocieteMere("groupe2", "info@group2.com",
-                "rue du groupe2");
+            var group1 = new ParentCompany("group1", "info@group1.com",
+                "group1 street");
+            var group2 = new ParentCompany("group2", "info@group2.com",
+                "group2 street");
 
-            groupe1.ajouteFiliale(societe1);
-            groupe1.ajouteFiliale(societe2);
-            groupe2.ajouteFiliale(groupe1);
-            groupe2.ajouteFiliale(societe3);
-            groupe2.accepteVisiteur(new VisiteurMailingCommercial());
+            group1.AddSubsidiary(company1);
+            group1.AddSubsidiary(company2);
+            group2.AddSubsidiary(group1);
+            group2.AddSubsidiary(company3);
+            group2.AcceptVisitor(new BusinessMailingVisitor());
         }
     }
 }

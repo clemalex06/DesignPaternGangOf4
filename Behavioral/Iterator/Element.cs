@@ -1,18 +1,17 @@
-﻿using System;
-namespace Iterator
+﻿namespace Iterator
 {
     public abstract class Element
     {
-        protected string description;
+        protected string Description;
 
         public Element(string description)
         {
-            this.description = description;
+            Description = description;
         }
 
-        public bool motCleValide(string motCle)
+        public bool IsValidKeyWord(string keyWord)
         {
-            return description.IndexOf(motCle) != -1;
+            return Description.IndexOf(keyWord) != -1;
         }
     }
 }

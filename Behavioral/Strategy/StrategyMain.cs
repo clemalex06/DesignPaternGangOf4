@@ -1,22 +1,18 @@
-﻿using System;
-
-namespace Strategy
+﻿namespace Strategy
 {
     /*
-     *
-     * Concept du Strategy
-     * adatpte le comportement et les algorithmes d'un objet en fonction
-     * d'un besoin sans changer les interactions avec le client de cet objet
-     * 
+     * ### Strategy's Concept :
+     * Lets you define a family of algorithms, 
+     * put each of them into a separate class, and make their objects interchangeable.
      */
     public static class StrategyMain
     {
         public static void Main()
         {
-            var vueCatalogue1 = new VueCatalogue(new DessinTroisVehiculeLigne());
-            vueCatalogue1.dessine();
-            var vueCatalogue2 = new VueCatalogue(new DessinUnVehiculeLigne());
-            vueCatalogue2.dessine();
+            var catalogView1 = new CatalogView(new DrawThreeCarsPerLine());
+            catalogView1.Draw();
+            var catalogView2 = new CatalogView(new DrawOneCarPerLine());
+            catalogView2.Draw();
         }
     }
 }
