@@ -85,18 +85,10 @@ Lets you define a family of algorithms, put each of them into a separate class, 
 ### TemplateMethod's Concept :
 Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
-    Visitor
+### Visitor's Concept :
+Lets you separate algorithms from the objects on which they operate.
 
-    /*
-     *
-     *Concept du Visitor
-     * construit une opération à réaliser sur les éléments d'un ensemble
-     * d'objets. De nouvelles opérations peuvent ainsi être ajoutées
-     * sans modifier les classes de ces objets
-     * 
-     */
-
-Autres
+## Others Design Patterns
 
     Pluggable Factory
 

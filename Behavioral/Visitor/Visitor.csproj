@@ -34,11 +34,11 @@
   <ItemGroup>
     <Compile Include="VisitorMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Societe.cs" />
-    <Compile Include="SocieteSansFiliale.cs" />
-    <Compile Include="Visiteur.cs" />
-    <Compile Include="SocieteMere.cs" />
-    <Compile Include="VisiteurMailingCommercial.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="SubsidiaryLessCompany.cs" />
+    <Compile Include="IVisitor.cs" />
+    <Compile Include="ParentCompany.cs" />
+    <Compile Include="BusinessMailingVisitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
