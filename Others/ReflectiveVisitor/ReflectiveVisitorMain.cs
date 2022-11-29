@@ -3,9 +3,8 @@
 namespace ReflectiveVisitor
 {
     /*
-     *
-     * Concept du reflective Visitor :
-     * Visitor + Composite
+     * ### Reflective Visitor's Concept :
+     * It's a design pattern which implements  Visitor + Composite
      * 
      */
     public static class ReflectiveVisitorMain

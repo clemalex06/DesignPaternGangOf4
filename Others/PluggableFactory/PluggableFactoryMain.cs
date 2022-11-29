@@ -2,7 +2,7 @@
 {
     /*
      * ### Pluggable Factory's Concept :
-     * It's a design pattern which implementents  Abstract Factory + Prototype
+     * It's a design pattern which implements  Abstract Factory + Prototype
      */
     public static class PluggableFactoryMain
     {
