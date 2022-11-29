@@ -90,23 +90,12 @@ Lets you separate algorithms from the objects on which they operate.
 
 ## Others Design Patterns
 
-    Pluggable Factory
+### Pluggable Factory's Concept :
+It's a design pattern which implementents  Abstract Factory + Prototype
 
-    /*
-     *
-     *Concept du pluggable Factory
-     * Abstract Factory + Prototype
-     * 
-     */
-
-    Reflective Visitor
-    /*
-     *
-     * Concept du reflective Visitor :
-     * Visitor + Composite
-     * 
-     */
-
+### Reflective Visitor's Concept :
+It's a design pattern which implementents  Visitor + Composite
+    
     Multicast
     /*
      *
