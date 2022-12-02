@@ -247,8 +247,8 @@ namespace Main
                             1,
                            new DesignPattern
                            {
-                               Name = "Multicast",
-                               Action = Multicast.MulticastMain.Main,
+                               Name = "MultiCast Delegates",
+                               Action = Multicast.MultiCastMain.Main,
                            }
                         },
                         {

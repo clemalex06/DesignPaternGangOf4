@@ -1,35 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Multicast
 {
     /*
-     *
-     * Concept du Multicast
-     * gérer les évènements produits dans un programme afin de les transmettre
-     * à un ensemble de récepteurs concernés. Le pattern est basé sur un mécanisme
-     * d'inscription des récepteurs auprès des expéditeurs
-     * 
+     * ### MultiCast delegate 's Concept :
+     * The multicast delegate pattern is a behavioral pattern that’s a variation on the delegate pattern. 
+     * It allows you to create one-to-many delegate relationships, 
+     * instead of one-to-one relationships in a simple delegate.
      */
-    public static class MulticastMain
+    public static class MultiCastMain
     {
         public static void Main()
         {
-            var directionGenerale = new DirectionGenerale();
-            var directionCommerciale = new DirectionCommerciale();
-            var commercial1 = new Commercial("Paul");
-            var commercial2 = new Commercial("Henri");
+            var messageServer = new MessageServer("0808", "server@email.com");
+            var smartphone1 = new SmartPhone("iPhone", "0102", "iPhone@email.com");
+            var smartphone2 = new SmartPhone("Samsung", "0304", "Samsung@email.com");
+            var mobilePhone = new MobilePhone("Nokia", "0506");
+            var mobilePhones = new List<IPhoneRecipient> { smartphone1, smartphone2, mobilePhone };
+            messageServer.RegisterPhoneRecipients(mobilePhones);
 
-            var administratif = new Administratif("Jacques");
 
-            directionGenerale.ajouteRecepteurGeneral(commercial1);
-            directionGenerale.ajouteRecepteurGeneral(commercial2);
-            directionGenerale.ajouteRecepteurGeneral(administratif);
+            var computer = new Computer("MacBookAir", "macBook@email.com");
+            var computers = new List<IMailRecipient> { smartphone1, smartphone2, computer };
+            messageServer.RegisterMailRecipients(computers);
 
-            directionCommerciale.ajouteRecepteurCommercial(commercial1);
-            directionCommerciale.ajouteRecepteurCommercial(commercial2);
+            var content = "This is the content of the message";
 
-            directionGenerale.envoieMessages();
-            directionCommerciale.envoieMessages();
+            messageServer.SendMessages(content);
         }
     }
 }

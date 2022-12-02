@@ -32,22 +32,22 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MulticastMain.cs" />
+    <Compile Include="Computer.cs" />
+    <Compile Include="MultiCastMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MessageAbstrait.cs" />
-    <Compile Include="RecepteurAbstrait.cs" />
-    <Compile Include="ExpediteurAbstrait.cs" />
-    <Compile Include="MessageGeneral.cs" />
-    <Compile Include="RecepteurGeneral.cs" />
-    <Compile Include="ExpediteurGeneral.cs" />
-    <Compile Include="DirectionGenerale.cs" />
-    <Compile Include="Employe.cs" />
-    <Compile Include="Administratif.cs" />
-    <Compile Include="MessageCommercial.cs" />
-    <Compile Include="RecepteurCommercial.cs" />
-    <Compile Include="DirectionCommerciale.cs" />
-    <Compile Include="ExpediteurCommercial.cs" />
-    <Compile Include="Commercial.cs" />
+    <Compile Include="AbstractMessage.cs" />
+    <Compile Include="IMessageRecipient.cs" />
+    <Compile Include="AbstractMessageSender.cs" />
+    <Compile Include="PhoneMessage.cs" />
+    <Compile Include="IPhoneRecipient.cs" />
+    <Compile Include="PhoneMessageSender.cs" />
+    <Compile Include="MessageServer.cs" />
+    <Compile Include="AbstractPhoneRecipient.cs" />
+    <Compile Include="MobilePhone.cs" />
+    <Compile Include="MailMessage.cs" />
+    <Compile Include="IMailRecipient.cs" />
+    <Compile Include="MailMessageSender.cs" />
+    <Compile Include="SmartPhone.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
