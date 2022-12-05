@@ -90,29 +90,15 @@ Lets you separate algorithms from the objects on which they operate.
 
 ## Others Design Patterns
 
-    Pluggable Factory
+    
 
-    /*
-     *
-     *Concept du pluggable Factory
-     * Abstract Factory + Prototype
-     * 
-     */
+### MultiCast delegate 's Concept :
+The multicast delegate pattern is a behavioral pattern that’s a variation on the delegate pattern. 
+It allows you to create one-to-many delegate relationships, instead of one-to-one relationships in a simple delegate.
 
-    Reflective Visitor
-    /*
-     *
-     * Concept du reflective Visitor :
-     * Visitor + Composite
-     * 
-     */
+### Pluggable Factory's Concept :
+It's a design pattern which implements  Abstract Factory + Prototype
 
-    Multicast
-    /*
-     *
-     * Concept du Multicast
-     * gérer les évènements produits dans un programme afin de les transmettre
-     * à un ensemble de récepteurs concernés. Le pattern est basé sur un mécanisme
-     * d'inscription des récepteurs auprès des expéditeurs
-     * 
-     */
+### Reflective Visitor's Concept :
+It's a design pattern which implements  Visitor + Composite
+    

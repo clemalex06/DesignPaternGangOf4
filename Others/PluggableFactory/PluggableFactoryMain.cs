@@ -1,34 +1,30 @@
-﻿using System;
-
-namespace PluggableFactory
+﻿namespace PluggableFactory
 {
     /*
-     *
-     *Concept du pluggable Factory
-     * Abstract Factory + Prototype
-     * 
+     * ### Pluggable Factory's Concept :
+     * It's a design pattern which implements  Abstract Factory + Prototype
      */
     public static class PluggableFactoryMain
     {
         public static void Main()
         {
-            var protoAutoStandardBleu = new AutomobileElectricite();
-            protoAutoStandardBleu.modele = "standard";
-            protoAutoStandardBleu.couleur = "bleu";
+            var blueStandardCar = new ElectricCar();
+            blueStandardCar.Model = "Standard";
+            blueStandardCar.Color = "Blue";
 
-            var protoScooterClassicRouge = new ScooterEssence();
-            protoScooterClassicRouge.modele = "classique";
-            protoScooterClassicRouge.couleur = "rouge";
+            var redClassicalMoto = new GasolineMoto();
+            redClassicalMoto.Model = "Classical";
+            redClassicalMoto.Color = "Red";
 
-            var fabrique = new fabriqueVehicule();
-            fabrique.prototypeAutomobile = protoAutoStandardBleu;
-            fabrique.prototypeScooter = protoScooterClassicRouge;
+            var factory = new VehicleFactory();
+            factory.CarPrototype = blueStandardCar;
+            factory.MotoPrototype = redClassicalMoto;
 
-            var auto = fabrique.creerAutomobile();
-            auto.afficheCaracteristiques();
+            var car = factory.CreateCar();
+            car.DisplayFeatures();
 
-            var scooter = fabrique.creerScooter();
-            scooter.afficheCaracteristiques();
+            var moto = factory.CreateMoto();
+            moto.DisplayFeatures();
         }
     }
 }
