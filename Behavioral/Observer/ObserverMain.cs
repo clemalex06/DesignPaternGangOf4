@@ -1,5 +1,4 @@
-﻿using System;
-namespace Observer
+﻿namespace Observer
 {
     /*
      * ### Observer's Concept :

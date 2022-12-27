@@ -1,5 +1,4 @@
-﻿using System;
-namespace Interpreter
+﻿namespace Interpreter
 {
     public class AndOperator : BinaryOperator
     {
