@@ -5,7 +5,7 @@ namespace Builder
     {
         public override void AddDocument(string document)
         {
-            if (document.StartsWith("<script>") )
+            if (document.StartsWith("<script>"))
 
             {
                 content.Add(document);

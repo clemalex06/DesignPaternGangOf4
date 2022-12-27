@@ -1,11 +1,10 @@
-﻿using System;
-
-namespace Prototype
+﻿namespace Prototype
 {
     /*
      * Prototype's Concept :
-     * Creates duplicate object while keeping performance in mind. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
-     * 
+     * Creates duplicate object while keeping performance in mind.
+     * This type of design pattern comes under creational pattern 
+     * as this pattern provides one of the best ways to create an object.
      */
     public static class PrototypeMain
     {

@@ -1,12 +1,10 @@
 ﻿using System;
-
 namespace Builder
 {
     /*
-     *
      * Builder's Concept :
-     * Allows the construction of complex objects to be separated from their layout, so that a client can create these complex objects with different layouts.
-     * 
+     * Allows the construction of complex objects to be separated from their layout, 
+     * so that a client can create these complex objects with different layouts.
      */
 
     public static class BuilderMain

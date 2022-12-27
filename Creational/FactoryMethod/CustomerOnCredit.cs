@@ -1,5 +1,4 @@
-﻿using System;
-namespace FactoryMethod
+﻿namespace FactoryMethod
 {
     public class CustomerOnCredit : Customer
     {

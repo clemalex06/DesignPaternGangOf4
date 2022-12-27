@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AbstractFactory
 {
-    public class ElectricCar: Car
+    public class ElectricCar : Car
     {
         public ElectricCar(string model, string color, int power, double space)
             : base(model, color, power, space)
