@@ -1,11 +1,9 @@
 ﻿using System;
-
 namespace Adapter
 {
     /*
      * Adapter's Concept :
      * Allows objects with incompatible interfaces to collaborate.
-     * 
      */
 
     public static class AdapterMain

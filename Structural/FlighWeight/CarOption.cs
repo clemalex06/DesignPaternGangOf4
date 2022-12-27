@@ -14,7 +14,7 @@ namespace FlighWeight
             RegularPrice = 100;
         }
 
-        public void Display( int sellingPrice)
+        public void Display(int sellingPrice)
         {
             Console.WriteLine("Option");
             Console.WriteLine($"Name : {Name}");

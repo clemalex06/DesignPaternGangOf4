@@ -1,11 +1,12 @@
 ﻿using System;
 namespace Adapter
 {
-    public class Documenthtml:Document
+    public class Documenthtml : Document
     {
         protected string _content;
 
-        public string Content {
+        public string Content
+        {
             get
             {
                 return _content;

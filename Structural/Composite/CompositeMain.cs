@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Composite
 {
     /*
@@ -12,7 +11,7 @@ namespace Composite
     {
         public static void Main()
         {
-            var company1= new CompanyWithoutSubsidiary();
+            var company1 = new CompanyWithoutSubsidiary();
             company1.AddCar();
             var company2 = new CompanyWithoutSubsidiary();
             company2.AddCar();

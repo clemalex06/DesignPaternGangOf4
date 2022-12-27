@@ -1,5 +1,4 @@
-﻿using System;
-namespace Composite
+﻿namespace Composite
 {
     public abstract class Company
     {
