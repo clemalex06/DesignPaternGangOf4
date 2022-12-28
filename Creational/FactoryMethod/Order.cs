@@ -1,13 +1,12 @@
-﻿using System;
-namespace FactoryMethod
+﻿namespace FactoryMethod
 {
     public abstract class Order
     {
         protected double Amount;
 
-        public Order(double montant)
+        public Order(double amount)
         {
-            Amount = montant;
+            Amount = amount;
         }
 
         public abstract bool IsValid();

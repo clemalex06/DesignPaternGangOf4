@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FlighWeight
+﻿namespace FlighWeight
 {
     /*
      * FlighWeight's Concept :

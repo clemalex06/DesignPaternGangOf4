@@ -1,5 +1,4 @@
-﻿using System;
-namespace Facade
+﻿namespace Facade
 {
     public class DocumentManagementComponent : IDocumentManagement
     {

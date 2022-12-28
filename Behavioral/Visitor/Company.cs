@@ -1,5 +1,4 @@
-﻿using System;
-namespace Visitor
+﻿namespace Visitor
 {
     public abstract class Company
     {

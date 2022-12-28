@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Proxy
+﻿namespace Proxy
 {
     /*
      * Proxy's Concept :

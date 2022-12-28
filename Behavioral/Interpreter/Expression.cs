@@ -5,7 +5,6 @@ namespace Interpreter
     {
         public abstract bool Evaluate(string description);
 
-        //partie analyse syntaxique
         protected static string Source;
         protected static int Index;
         protected static string Token;

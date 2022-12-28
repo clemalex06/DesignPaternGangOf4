@@ -6,10 +6,10 @@ namespace Prototype
         public CustomerDocumentList(string informations)
         {
             documents = new List<Document>();
-            EmptyDocumentList laLiassevIerge = EmptyDocumentList.Instance();
-            IList<Document> documentsVierges = laLiassevIerge.documents;
+            EmptyDocumentList emptyDocumentList = EmptyDocumentList.Instance();
+            IList<Document> emptyDocuments = emptyDocumentList.documents;
 
-            foreach (var doc in documentsVierges)
+            foreach (var doc in emptyDocuments)
             {
                 Document copieDocument = doc.Duplicate();
                 copieDocument.FillOut(informations);

@@ -3,7 +3,6 @@ namespace Proxy
 {
     public class AnimationMovie : IAnimationMovie
     {
-
         public void Click()
         {
         }

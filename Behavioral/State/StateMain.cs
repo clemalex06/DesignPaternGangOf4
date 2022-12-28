@@ -1,5 +1,4 @@
-﻿using System;
-namespace State
+﻿namespace State
 {
     /*
      * ### State's Concept :
@@ -28,9 +27,6 @@ namespace State
             order2.NextState();
             order2.Clear();
             order2.Display();
-
-
-
         }
     }
 }

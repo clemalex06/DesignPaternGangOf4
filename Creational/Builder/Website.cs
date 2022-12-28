@@ -1,21 +1,20 @@
 ﻿using System;
-
 namespace Builder
 {
     public class Website
     {
-        protected BundleForWebsite bundleForWebsite;
+        protected BundleForWebsite BundleForWebsite;
         public Website(BundleForWebsite bundleForWebsite)
         {
-            this.bundleForWebsite = bundleForWebsite;
+            this.BundleForWebsite = bundleForWebsite;
         }
 
         public Bundle InitializeBundleContent(string webSiteName)
         {
             Console.WriteLine($"new bundle intialized for '{webSiteName}' website");
-            bundleForWebsite.ApplyBundleForHighcharts(webSiteName);
-            bundleForWebsite.ApplyBundleForBootstrap(webSiteName);
-            return bundleForWebsite.Bundle();
+            BundleForWebsite.ApplyBundleForHighcharts(webSiteName);
+            BundleForWebsite.ApplyBundleForBootstrap(webSiteName);
+            return BundleForWebsite.Bundle();
         }
     }
 }

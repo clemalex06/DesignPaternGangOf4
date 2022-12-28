@@ -1,5 +1,4 @@
-﻿using System;
-namespace Interpreter
+﻿namespace Interpreter
 {
     public abstract class BinaryOperator : Expression
     {

@@ -1,5 +1,4 @@
-﻿using System;
-namespace Prototype
+﻿namespace Prototype
 {
     public abstract class Document
     {
